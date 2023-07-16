@@ -1,9 +1,9 @@
-Teh.versioncheck = {
+TehHP.versioncheck = {
     version = PathingVersion,
     isGoodVersion = false
 }
 
-Debug:Watch("Version Check", Teh.versioncheck)
+Debug:Watch("TehHP_Version Check", TehHP.versioncheck)
 
 -- Minimum version numbers required
 local minMajor = 1
@@ -24,12 +24,12 @@ local function createAlert(version)
         TriggerRange = 10000,
         AutoTrigger = true
     })
-    alert:SetTexture("Data/TehsTrails/Markers/caution.png")
+    alert:SetTexture("Data/TehsTrails-HeroPoints/Markers/caution.png")
     alert:SetPos(pos)
 end
 
 -- Checks if the current version is high enough to run the pack
-function Teh_VersionCheck()
+function TehHP_VersionCheck()
     if (PathingVersion == nil) then
         createAlert("<1.2.1")
         return false
@@ -44,7 +44,7 @@ function Teh_VersionCheck()
         createAlert(PathingVersion)
         return false
     else
-        Teh.versioncheck.isGoodVersion = true
+        TehHP.versioncheck.isGoodVersion = true
         return true
     end
 end
