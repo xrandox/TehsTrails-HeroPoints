@@ -1,10 +1,10 @@
-Teh.copy = {
+TehHP.copy = {
     categoriesToWatch = {
-        ["tt"] = World:CategoryByType("tt.credits.tt.link"),
-        ["overflow"] = World:CategoryByType("tt.credits.overflow.link"),
-        ["bhud"] = World:CategoryByType("tt.credits.bhud.link"),
-        ["ign"] = World:CategoryByType("tt.credits.mail.m.ign"),
-        ["kofi"] = World:CategoryByType("tt.credits.kofi.k.link"),
+        ["tt"] = World:CategoryByType("tthp.credits.tt.link"),
+        ["overflow"] = World:CategoryByType("tthp.credits.overflow.link"),
+        ["bhud"] = World:CategoryByType("tthp.credits.bhud.link"),
+        ["ign"] = World:CategoryByType("tthp.credits.mail.m.ign"),
+        ["kofi"] = World:CategoryByType("tthp.credits.kofi.k.link"),
     },
     visibility = {
         ["tt"] = nil,
@@ -15,33 +15,33 @@ Teh.copy = {
     }
 }
 
-Debug:Watch("copy", Teh.copy)
+Debug:Watch("TehHP_Copy", TehHP.copy)
 
 -- Preload the visibility values to our internal table
-local c = Teh.copy.categoriesToWatch
+local c = TehHP.copy.categoriesToWatch
 
-Teh.copy.visibility["tt"] = c["tt"]:IsVisible()
-Teh.copy.visibility["overflow"] = c["overflow"]:IsVisible()
-Teh.copy.visibility["bhud"] = c["bhud"]:IsVisible()
-Teh.copy.visibility["ign"] = c["ign"]:IsVisible()
-Teh.copy.visibility["kofi"] = c["kofi"]:IsVisible()
+TehHP.copy.visibility["tt"] = c["tt"]:IsVisible()
+TehHP.copy.visibility["overflow"] = c["overflow"]:IsVisible()
+TehHP.copy.visibility["bhud"] = c["bhud"]:IsVisible()
+TehHP.copy.visibility["ign"] = c["ign"]:IsVisible()
+TehHP.copy.visibility["kofi"] = c["kofi"]:IsVisible()
 
 
 -- Copies the display name of the given category to the clipboard
-function Teh_Copy(category)
+function TehHP_Copy(category)
     User.SetClipboard(category.DisplayName)
 end
 
 -- Handles listening for visibility changes in the watched categories
-function Teh_CopyTickHandler()
+function TehHP_CopyTickHandler()
     -- For each watched category
-    for key, value in pairs(Teh.copy.categoriesToWatch) do
+    for key, value in pairs(TehHP.copy.categoriesToWatch) do
         -- Get the current visibility
         local currentVis = value:IsVisible()
         -- If that doesn't match our saved visibility, then copy to clipboard and update the saved visibility
-        if (currentVis ~= Teh.copy.visibility[key]) then
-            Teh_Copy(value)
-            Teh.copy.visibility[key] = currentVis
+        if (currentVis ~= TehHP.copy.visibility[key]) then
+            TehHP_Copy(value)
+            TehHP.copy.visibility[key] = currentVis
         end
     end
 end

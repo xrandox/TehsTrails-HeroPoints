@@ -1,4 +1,4 @@
-Teh.trailcolors = {
+TehHP.trailcolors = {
     colors = {
         -- Name, Color, Menu Reference
         {"Light Blue [Default]", I:Color(74, 213, 255), nil},
@@ -20,20 +20,25 @@ Teh.trailcolors = {
     }
 }
 
-Debug:Watch("Trail Colors", Teh.trailcolors)
+Debug:Watch("TehHP_TrailColors", TehHP.trailcolors)
 
 local mainTrail = World:TrailByGuid("cb6VPxgSL0yytSwws/y+Vg==")
-local texture = I:Texture(Pack, "Data/TehsTrails/Markers/trailwhite.png")
+local texture = I:Texture(Pack, "Data/TehsTrails-HeroPoints/Markers/Trail.png")
 
 -- Change the color of the main trail to the requested color name
-function Teh_ChangeColor(name)
-    for _, value in ipairs(Teh.trailcolors.colors) do
+function TehHP_ChangeColor(name)
+    if (mainTrail == nil) then
+        Debug:Error("Failed to change trail color: Could not get reference to main trail")
+        return
+    end
+
+    for _, value in ipairs(TehHP.trailcolors.colors) do
         if (value[1] == name) then
             mainTrail.Tint = value[2]
             mainTrail.Texture = texture
             mainTrail.TrailSampleColor = value[2]
             mainTrail.InGameVisibility = true
-            Teh_SaveValue("trailColor", name)
+            TehHP_SaveValue("hpTrailColor", name)
         end
     end
 end

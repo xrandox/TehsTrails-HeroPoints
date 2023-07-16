@@ -1,35 +1,31 @@
-Teh.static = {
+TehHP.static = {
     -- List of the map ID's we have markers on in, split by area
     maps = {
-        core = { 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34, 35, 39, 50, 51, 53, 54, 62, 65, 73, 91, 139, 218, 326 },
         eod = { 1422, 1428, 1438, 1442, 1452 },
         hot = { 1043, 1045, 1052 },
         pof = { 1210, 1211, 1226, 1228 },
-        all = { 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34, 35, 39, 50, 51, 53, 54, 62, 65, 73, 91, 139, 218, 326, 1043, 1045, 1052, 1210, 1211, 1226, 1228, 1422, 1428, 1438, 1442, 1452 }
+        all = { 1043, 1045, 1052, 1210, 1211, 1226, 1228, 1422, 1428, 1438, 1442, 1452 }
     },
     -- Category types we want shown always, according to which areas they should be shown in
     categories = {
         all = {
-            "tt.credits.null.ign",
-            "tt.credits.zotmer.discord",
-            "tt.credits.snow.snow2",
-            "tt.credits.foxe.foxe3",
-            "tt.credits.odeh.odeh1",
-            "tt.credits.radd.radd0",
-            "tt.credits.orig.orig2",
-            "tt.credits.maptesters.contributor",
-            "tt.credits.assets.assets0",
-            "tt.credits.tt.link",
-            "tt.credits.overflow.link",
-            "tt.credits.bhud.link",
-            "tt.credits.mail.m.ign",
-            "tt.credits.kofi.k.link",
-            "tt.credits.a",
-            "tt.credits.f",
-            "tt.credits.k"
-        },
-        core = {
-
+            "tthp.credits.null.ign",
+            "tthp.credits.zotmer.discord",
+            "tthp.credits.snow.snow2",
+            "tthp.credits.foxe.foxe3",
+            "tthp.credits.odeh.odeh1",
+            "tthp.credits.radd.radd0",
+            "tthp.credits.orig.orig2",
+            "tthp.credits.maptesters.contributor",
+            "tthp.credits.assets.assets0",
+            "tthp.credits.tt.link",
+            "tthp.credits.overflow.link",
+            "tthp.credits.bhud.link",
+            "tthp.credits.mail.m.ign",
+            "tthp.credits.kofi.k.link",
+            "tthp.credits.a",
+            "tthp.credits.f",
+            "tthp.credits.k"
         },
         eod = {
 
@@ -43,8 +39,6 @@ Teh.static = {
     }
 }
 
-Debug:Watch("static", Teh.static)
-
 local mapID = Mumble.CurrentMap.Id
 
 -- Returns true if a map ID is in the table of ID's
@@ -56,6 +50,11 @@ local function mapIsIn(table, val)
     end
 
     return false
+end
+
+-- Globally accessible version of above
+function TehHP_MapIsIn(table, val)
+    return mapIsIn(table, val)
 end
 
 -- Creates invisable markers with the categories from a given table
@@ -80,16 +79,11 @@ end
 
 -- Create markers from the respective categories if the current mapID is in the table
 
-local maps = Teh.static.maps
-local categories = Teh.static.categories
-
--- Core maps
-if (mapIsIn(maps.core, mapID)) then
-    markerFromTable(categories.core)
-    markerFromTable(categories.all)
+local maps = TehHP.static.maps
+local categories = TehHP.static.categories
 
 -- EoD maps
-elseif (mapIsIn(maps.eod, mapID)) then
+if (mapIsIn(maps.eod, mapID)) then
     markerFromTable(categories.eod)
     markerFromTable(categories.all)
 
