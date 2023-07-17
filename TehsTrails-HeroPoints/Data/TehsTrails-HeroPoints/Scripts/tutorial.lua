@@ -6,13 +6,13 @@ local MARKER_CATEGORY = "tthp"
 local MARKER_CATALOG = {
     {
         info = {
-            "This marker shows the start of the trail on the current map\n\n(Press F to flip to next page)",
+            "This marker shows the start of the trail on the current map\n\nThe start locations for each pack are:\n - HoT - Shipwreck Peak, Verdant Brink\n - PoF - Amnoon Waypoint, Crystal Oasis\n - EoD - Longfeather Plaza, Arborstone (Arborstone Portal Scroll)\n\n(Press F to copy the start locations to clipboard and flip to next page)",
             "This red marker shows the way to the next map\n\n(Press F to flip to return to the first page)",
         },
         iconFile = { "Data/TehsTrails-HeroPoints/Markers/Start.png", "Data/TehsTrails-HeroPoints/Markers/ExitMap.png" },
         iconSize = { 1, 1 },
-        copy = { "", "" },
-        copyMessage = "",
+        copy = { "[&BN4HAAA=] | [&BLsKAAA=] | [&BG8NAAA=]", "" },
+        copyMessage = "Start locations copied to clipboard",
         maxPages = 2
     },
     {
@@ -79,7 +79,7 @@ local MARKER_CATALOG = {
         info = {
             "Welcome to Teh's Trails - Hero Points!\n\nThe markers around you are part of a tutorial to help you understand how to use the pack\n\nEach marker in the circle has different info attached to it, which you can read by walking up to the marker. Pressing F will advance the 'page'.\n\n(Press F to flip to the next page)",
             "As a disclaimer: This pack is specifically tailored to FAST, SOLO or SMALL-GROUP hero point farming\n\nIt's a bit more on the 'try-hard' side and not intended for your first time doing hero points\n\nIf you try to lead a large squad through these routes, chances are it will go horribly and half of them will crash or get lost\n\n(Press F to flip to the next page)",
-            "To run this pack you will need:\n - All mounts + mount masteries\n(especially Skyscale, Griffon and Beetle)\n - Prototype Position Rewinder\n - Jade Waypoint\n - Ash Legion Spy Kits (Optional)\nYou can attempt to follow the trails without these, but you may struggle at times and it will take considerably longer\n\n(Press F to flip to the next page)",
+            "To run this pack you will need:\n - All mounts + mount masteries\n(especially Skyscale, Griffon and Beetle)\n - Prototype Position Rewinder\n - Jade Waypoint (Don't Forget Your Jade Bot Core!)\n - Ash Legion Spy Kits (Optional)\nYou can attempt to follow the trails without these, but you may struggle at times and it will take considerably longer\n\n(Press F to flip to the next page)",
             "Feel free to move around to the other markers to read up on more tutorial info!\n\nIf you ever want to reread the tutorial, or if a tutorial marker spawned somewhere inaccessible, you can always reopen the tutorial from the Script Menu\n\nScripts -> Tehs Trails -> Show/Hide Tutorial\n\n(Press F to flip back to the first page)"
         },
         iconFile = {"Data/TehsTrails-HeroPoints/Markers/Trail.png", "Data/TehsTrails-HeroPoints/Markers/Trail.png", "Data/TehsTrails-HeroPoints/Markers/Trail.png", "Data/TehsTrails-HeroPoints/Markers/Trail.png" },
