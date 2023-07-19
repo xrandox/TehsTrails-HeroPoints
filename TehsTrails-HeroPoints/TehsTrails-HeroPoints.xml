@@ -6,7 +6,7 @@ xmlns="https://github.com/xrandox/Gw2_Marker_Pack_DTD_XSD">
 	<!--=======================================================================================================================================================================-->	
 	<!--==                                                                     HEART OF THORNS HERO POINT TRAIN                                                              ==-->
 	<!--=======================================================================================================================================================================-->
-	
+		<MarkerCategory name="hotsep" DisplayName="     |===Heart of Thorns===|     " isseparator="1"/>	
 		<MarkerCategory name="hothpt" DisplayName="Heart of Thorns">
 
 			<MarkerCategory name="ct" DisplayName="Main Trail" mapDisplaySize="12" fadeNear="3000" fadeFar="3500" scaleOnMapWithZoom="1" mapVisibility="1" texture="Data/TehsTrails-HeroPoints/Markers/Trail.png"/>
@@ -14,7 +14,7 @@ xmlns="https://github.com/xrandox/Gw2_Marker_Pack_DTD_XSD">
 			<MarkerCategory name="rm" DisplayName="Route Markers" fadeNear="3500" fadeFar="4000" miniMapVisibility="0" mapVisibility="0" infoRange="20">
 				<MarkerCategory name="jadewp" DisplayName="Jade Waypoint" iconFile="Data/TehsTrails-HeroPoints/Markers/jadewp.png" iconSize="0.6"/>
 				<MarkerCategory name="a" DisplayName="Arrow" iconFile="Data/TehsTrails-HeroPoints/Markers/Arrow.png"/>
-				<MarkerCategory name="caution" DisplayName="Caution - HP Info Marker" iconFile="Data/TehsTrails-HeroPoints/Markers/caution.png" iconSize="0.75"/>
+				<MarkerCategory name="caution" DisplayName="Caution - HP Info Marker" behavior="1" autoTrigger="1" infoRange="20" iconFile="Data/TehsTrails-HeroPoints/Markers/caution.png" iconSize="0.75"/>
 				<MarkerCategory name="stealth" DisplayName="Stealth-Commune" iconFile="Data/TehsTrails-HeroPoints/Markers/stealth.png" iconSize="0.75"/>
 				<MarkerCategory name="finish" DisplayName="Finish" iconFile="Data/TehsTrails-HeroPoints/Markers/Finish.png" iconSize="0.75" autoTrigger="1" triggerRange="25" />
 				<MarkerCategory name="dismount" DisplayName="Dismount" iconFile="Data/TehsTrails-HeroPoints/Markers/Dismount.png" iconSize="0.4"/>
@@ -56,13 +56,14 @@ xmlns="https://github.com/xrandox/Gw2_Marker_Pack_DTD_XSD">
 	<!--=======================================================================================================================================================================-->	
 	<!--==                                                                      PATH OF FIRE HERO POINT TRAIN                                                                ==-->
 	<!--=======================================================================================================================================================================-->
+		<MarkerCategory name="pofsep" DisplayName="     |===Path of Fire===|     " isseparator="1"/>	
 		<MarkerCategory name="pofhpt" DisplayName="Path of Fire">
 			<MarkerCategory name="ct" DisplayName="Main Trail" mapDisplaySize="12" fadeNear="3000" fadeFar="3500" scaleOnMapWithZoom="1" mapVisibility="1" texture="Data/TehsTrails-HeroPoints/Markers/Trail.png"/>
 			
 			<MarkerCategory name="rm" DisplayName="Route Markers" fadeNear="3500" fadeFar="4000" miniMapVisibility="0" mapVisibility="0" infoRange="20">
 				<MarkerCategory name="jadewp" DisplayName="Jade Waypoint" iconFile="Data/TehsTrails-HeroPoints/Markers/jadewp.png" iconSize="0.6"/>
 				<MarkerCategory name="a" DisplayName="Arrow" iconFile="Data/TehsTrails-HeroPoints/Markers/Arrow.png"/>
-				<MarkerCategory name="caution" DisplayName="Caution - HP Info Marker" iconFile="Data/TehsTrails-HeroPoints/Markers/caution.png" iconSize="0.75"/>
+				<MarkerCategory name="caution" DisplayName="Caution - HP Info Marker" behavior="1" iconFile="Data/TehsTrails-HeroPoints/Markers/caution.png" triggerRange="20" iconSize="0.75"/>
 				<MarkerCategory name="stealth" DisplayName="Stealth-Commune" iconFile="Data/TehsTrails-HeroPoints/Markers/stealth.png" iconSize="0.75"/>
 				<MarkerCategory name="finish" DisplayName="Finish" iconFile="Data/TehsTrails-HeroPoints/Markers/Finish.png" iconSize="0.75" autoTrigger="1" triggerRange="25" />
 				<MarkerCategory name="dismount" DisplayName="Dismount" iconFile="Data/TehsTrails-HeroPoints/Markers/Dismount.png" iconSize="0.4"/>
@@ -105,7 +106,7 @@ xmlns="https://github.com/xrandox/Gw2_Marker_Pack_DTD_XSD">
 	<!--==                                                                        END OF DRAGONS HERO POINT TRAIL                                                            ==-->
 	<!--=======================================================================================================================================================================-->
 
-
+		<MarkerCategory name="eodsep" DisplayName="     |===End of Dragons===|     " isseparator="1"/>
 		<MarkerCategory name="eodhp" DisplayName="End of Dragons">
 
 			<MarkerCategory name="ct" DisplayName="Main Trail" mapDisplaySize="12" fadeNear="3000" fadeFar="3500" scaleOnMapWithZoom="1" mapVisibility="1" texture="Data/TehsTrails-HeroPoints/Markers/Trail.png"/>
@@ -113,7 +114,7 @@ xmlns="https://github.com/xrandox/Gw2_Marker_Pack_DTD_XSD">
 			<MarkerCategory name="rm" DisplayName="Route Markers" fadeNear="3500" fadeFar="4000" miniMapVisibility="0" mapVisibility="0" infoRange="20">
 				<MarkerCategory name="jadewp" DisplayName="Jade Waypoint" iconFile="Data/TehsTrails-HeroPoints/Markers/jadewp.png" iconSize="0.6"/>
 				<MarkerCategory name="a" DisplayName="Arrow" iconFile="Data/TehsTrails-HeroPoints/Markers/Arrow.png"/>
-				<MarkerCategory name="caution" DisplayName="Caution - HP Info Marker" iconFile="Data/TehsTrails-HeroPoints/Markers/caution.png" iconSize="0.75"/>
+				<MarkerCategory name="caution" DisplayName="Caution - HP Info Marker" iconFile="Data/TehsTrails-HeroPoints/Markers/caution.png" behavior="1" triggerRange="20" iconSize="0.75"/>
 				<MarkerCategory name="stealth" DisplayName="Stealth-Commune" iconFile="Data/TehsTrails-HeroPoints/Markers/stealth.png" iconSize="0.75"/>
 				<MarkerCategory name="finish" DisplayName="Finish" iconFile="Data/TehsTrails-HeroPoints/Markers/Finish.png" iconSize="0.75" autoTrigger="1" triggerRange="25" />
 				<MarkerCategory name="dismount" DisplayName="Dismount" iconFile="Data/TehsTrails-HeroPoints/Markers/Dismount.png" iconSize="0.4"/>
@@ -166,9 +167,7 @@ xmlns="https://github.com/xrandox/Gw2_Marker_Pack_DTD_XSD">
 
 			<MarkerCategory name="and" DisplayName="     |==Major Contributions By==|     " isseparator="1"/>
 			
-			<MarkerCategory name="zotmer" DisplayName="Zotmer">
-				<MarkerCategory name="discord" DisplayName="zotmer#3244"/>			
-			</MarkerCategory>
+
 
 			
 			<MarkerCategory name="thanksto" DisplayName="     |====Special Thanks To=====|     " isseparator="1"/>
@@ -188,51 +187,16 @@ xmlns="https://github.com/xrandox/Gw2_Marker_Pack_DTD_XSD">
 				<MarkerCategory name="foxe3" DisplayName="IG: @foxetails"/>
 			</MarkerCategory>
 
+			<MarkerCategory name="zotmer" DisplayName="The Fastest Tyrian">
+				<MarkerCategory name="zotmer" DisplayName="For always providing great feedback" isseparator="1"/>	
+				<MarkerCategory name="zotmer" DisplayName="and pushing my packs to the limit" isseparator="1"/>	
+				<MarkerCategory name="zotmer0" DisplayName="zotmer#3244" isseparator="1"/>			
+			</MarkerCategory>
+
 			<MarkerCategory name="odeh" DisplayName="The Mad Assistant">
 				<MarkerCategory name="odeh" DisplayName="Who probably went just" isseparator="1"/>
 				<MarkerCategory name="odeh0" DisplayName="as insane as I did:" isseparator="1"/>
 				<MarkerCategory name="odeh1" DisplayName="Odeh.9310"/>
-			</MarkerCategory>
-
-			<MarkerCategory name="radd" DisplayName="The Slave Laborer">
-				<MarkerCategory name="radd" DisplayName="Who helped keep me organized:" isseparator="1"/>
-				<MarkerCategory name="radd0" DisplayName="Orange Turtle.3546"/>
-			</MarkerCategory>
-
-			<MarkerCategory name="orig" DisplayName="The Original Pioneers">
-				<MarkerCategory name="orig" DisplayName="Who developed the base routing that I" isseparator="1"/>
-				<MarkerCategory name="orig0" DisplayName="started with, and inspired the project:" isseparator="1"/>
-				<MarkerCategory name="orig1" DisplayName="Lulleh.6714 - [LAW]" isseparator="1"/>
-				<MarkerCategory name="orig2" DisplayName="ideka's AugTyr"/>
-			</MarkerCategory>
-
-			<MarkerCategory name="maptesters" DisplayName="The Testers/Contributors">
-				<MarkerCategory name="maptester0" DisplayName="Alatar.7364" isseparator="1"/>
-				<MarkerCategory name="maptester1" DisplayName="Ank.9537" isseparator="1"/>
-				<MarkerCategory name="maptester2" DisplayName="Blood.5607" isseparator="1"/>
-				<MarkerCategory name="maptester3" DisplayName="choco.5918" isseparator="1"/>
-				<MarkerCategory name="maptester4" DisplayName="Deekay.1579" isseparator="1"/>
-				<MarkerCategory name="maptester5" DisplayName="Don.9870" isseparator="1"/>
-				<MarkerCategory name="maptester6" DisplayName="Emikadon.8542" isseparator="1"/>
-				<MarkerCategory name="maptester7" DisplayName="Frenzy.6189" isseparator="1"/>
-				<MarkerCategory name="maptester8" DisplayName="iToPouch.5073" isseparator="1"/>
-				<MarkerCategory name="maptester23" DisplayName="Irda.4105" isseparator="1"/>
-				<MarkerCategory name="maptester9" DisplayName="justsoelmo.7068" isseparator="1"/>
-				<MarkerCategory name="maptester10" DisplayName="lokko.7534" isseparator="1"/>
-				<MarkerCategory name="maptester11" DisplayName="Lycart.5487" isseparator="1"/>
-				<MarkerCategory name="maptester12" DisplayName="Lyra.7082" isseparator="1"/>
-				<MarkerCategory name="maptester13" DisplayName="Mavrande.5849" isseparator="1"/>
-				<MarkerCategory name="maptester24" DisplayName="Nofeis.9763" isseparator="1"/>
-				<MarkerCategory name="maptester14" DisplayName="Pizzous.4783" isseparator="1"/>
-				<MarkerCategory name="maptester15" DisplayName="Predator.1430" isseparator="1"/>
-				<MarkerCategory name="maptester16" DisplayName="Scott Ware.7291" isseparator="1"/>
-				<MarkerCategory name="maptester17" DisplayName="ScythShot.9236" isseparator="1"/>
-				<MarkerCategory name="maptester18" DisplayName="Sj Vermeulen.1470" isseparator="1"/>
-				<MarkerCategory name="maptester19" DisplayName="Tacnayn.2754" isseparator="1"/>
-				<MarkerCategory name="maptester20" DisplayName="Xanky.6475" isseparator="1"/>
-				<MarkerCategory name="maptester21" DisplayName="xeronil.6930" isseparator="1"/>
-				<MarkerCategory name="maptester22" DisplayName="xhellkellx.4853" isseparator="1"/>
-				<MarkerCategory name="contributor" DisplayName="TarEnethil"/>
 			</MarkerCategory>
 
 			
@@ -285,116 +249,174 @@ xmlns="https://github.com/xrandox/Gw2_Marker_Pack_DTD_XSD">
 	<!--=======================================================================================================================================================================-->
 	<!--HEART OF THORNS HERO POINT MARKERS-->
 		<!--AURIC BASIN MARKERS-->
-		<POI MapID="1043" xpos="-183.648" ypos="267.665" zpos="-671.148" type="tthp.hothpt.rm.portal" GUID="S4Vp/s+770WZiiyO/v71SA=="/>
-		<POI MapID="1043" xpos="-222.55" ypos="260.051" zpos="-698.779" type="tthp.hothpt.rm.portal" GUID="rDZJhKFhcE22ROAwG2OJlw=="/>
-		<POI MapID="1043" xpos="-273.785" ypos="269.481" zpos="-737.732" type="tthp.hothpt.rm.a" GUID="AhSu5YVohE+rufXpjdPAUw=="/>
-		<POI MapID="1043" xpos="-290.628" ypos="275.711" zpos="-749.318" type="tthp.hothpt.rm.portal" GUID="zZi3aIdBZEquTiGcphdCQQ=="/>
-		<POI MapID="1043" xpos="-301.693" ypos="278.333" zpos="-758.052" type="tthp.hothpt.rm.portal" GUID="vFkgteNwlUG8gz/KuyIpHQ=="/>
-		<POI MapID="1043" xpos="-367.255" ypos="270.411" zpos="242.492" type="tthp.hothpt.rm.a" GUID="fPvLtrxZKUiUwwNTdR/uNQ=="/>
-		<POI MapID="1043" xpos="-382.145" ypos="475.194" zpos="669.599" type="tthp.hothpt.rm.2" GUID="4+a0t5MzzkGoAYqDMmeLzw=="/>
-		<POI MapID="1043" xpos="-388.742" ypos="480.543" zpos="651.126" type="tthp.hothpt.rm.start" GUID="wHUP0u+PDE6w+RJ4Ax4I9g=="/>
-		<POI MapID="1043" xpos="-420.702" ypos="305.083" zpos="430.756" type="tthp.hothpt.rm.portal" GUID="Tj6DfWSlu02qdGCuhRvHaQ=="/>
-		<POI MapID="1043" xpos="-495.841" ypos="267.136" zpos="-98.3559" type="tthp.hothpt.mm.springer" GUID="uhSBQqX+0UKqnL/NQSEVsQ=="/>
-		<POI MapID="1043" xpos="-498.459" ypos="268.276" zpos="-97.5703" type="tthp.hothpt.rm.a" GUID="abs4ufn3CESCEiZNdcD1tQ=="/>
-		<POI MapID="1043" xpos="-499.632" ypos="267.059" zpos="-94.2796" type="tthp.hothpt.rm.portal" GUID="RLxCJuUl20CaXYwIopsAZw=="/>
-		<POI MapID="1043" xpos="-512.675" ypos="310.982" zpos="-118.363" type="tthp.hothpt.rm.portal" GUID="8m7GoyinZ022cZT2uxr49Q=="/>
-		<POI MapID="1043" xpos="-512.949" ypos="313.837" zpos="-122.556" type="tthp.hothpt.rm.a" GUID="tExAAAhV8EOovb+eLXMNNA=="/>
-		<POI MapID="1043" xpos="-589.61" ypos="204.806" zpos="-354.127" type="tthp.hothpt.rm.a" GUID="lWI5HX0c1keULvZDs87OYA=="/>
-		<POI MapID="1043" xpos="265.544" ypos="377.994" zpos="578.205" type="tthp.hothpt.rm.a" GUID="MolMXXkIdkuAcIOKnPIkig=="/>
-		<POI MapID="1043" xpos="267.207" ypos="378.139" zpos="576.429" type="tthp.hothpt.rm.portal" GUID="UhxEnIpkek+X9ihvcI9n1w=="/>
-		<POI MapID="1043" xpos="268.697" ypos="377.596" zpos="581.619" type="tthp.hothpt.mm.griffon" GUID="9ghG87t0r0OwU40/g2Jrtw=="/>
-		<POI MapID="1043" xpos="292.624" ypos="380.097" zpos="636.435" type="tthp.hothpt.rm.portal" GUID="7xUsmRqYzUizubPGQz14fw=="/>
-		<POI MapID="1043" xpos="314.206" ypos="378.398" zpos="723.039" type="tthp.hothpt.mm.springer" GUID="2D8SWB4HUUyLDkxy72x88A=="/>
-		<POI MapID="1043" xpos="316.57" ypos="377.973" zpos="723.727" type="tthp.hothpt.rm.portal" GUID="kp3JqVzVZkeUaqOtpeIPbw=="/>
-		<POI MapID="1043" xpos="317.412" ypos="377.938" zpos="724.351" type="tthp.hothpt.rm.a" GUID="emMruKkiSEuyGJPAY7ldzg=="/>
-		<POI MapID="1043" xpos="338.768" ypos="234.299" zpos="-681.638" type="tthp.hothpt.rm.a" GUID="BTc+Xwqq+06tExhhPFEtLQ=="/>
-		<POI MapID="1043" xpos="345.35" ypos="423.36" zpos="739.504" type="tthp.hothpt.rm.portal" GUID="+hLhbhz04kCZv8Rm6bnfgw=="/>
-		<POI MapID="1043" xpos="383.391" ypos="289.342" zpos="177.061" type="tthp.hothpt.rm.portal" GUID="cMMP2jgoqkCRBKx5I1KBdQ=="/>
-		<POI MapID="1043" xpos="383.799" ypos="289.632" zpos="174.87" type="tthp.hothpt.mm.springer" GUID="EThChm7+B0m9drFlzetN7g=="/>
-		<POI MapID="1043" xpos="398.317" ypos="320.567" zpos="182.863" type="tthp.hothpt.rm.portal" GUID="HGUHgo2z/0K10CWq3JEqvg=="/>
-		<POI MapID="1043" xpos="466.083" ypos="354.684" zpos="173.941" type="tthp.hothpt.rm.a" GUID="9yuPkg8znUOb3c40RzVdLw=="/>
-		<POI MapID="1043" xpos="522.723" ypos="302.112" zpos="-264.645" type="tthp.hothpt.rm.portal" GUID="UECPYOI3okeD4yBoTa5EKQ=="/>
-		<POI MapID="1043" xpos="55.2259" ypos="331.628" zpos="474.842" type="tthp.hothpt.rm.a" GUID="VpZCow2qVE+zTBERJbn9BA=="/>
-		<POI MapID="1043" xpos="550.667" ypos="287.343" zpos="-248.433" type="tthp.hothpt.rm.portal" GUID="ndDDYvMNBEipdlCFY2HYHw=="/>
-		<POI MapID="1043" xpos="-544.189" ypos="211.242" zpos="-303.319" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(rllE7nEC5UuCP433w8JHjg==)" GUID="ONj/q2iKIUeq6IwTDq1vFA=="/>
-		<POI MapID="1043" xpos="-316.676" ypos="278.213" zpos="-769.451" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(XuWRrxcizk2Y4JQbJ/UzRQ==)" GUID="JxUJschB3kWTpxp7zG5ovQ=="/>
-		<POI MapID="1043" xpos="-10.0047" ypos="20.8018" zpos="122.299" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(y7OUxDsgA0CvcnxRahE91w==)" GUID="iOMWssjTc0WvCH4/x92gsg=="/>
-		<POI MapID="1043" xpos="341.401" ypos="235.705" zpos="-673.621" type="tthp.hothpt.wm.wph" GUID="XuWRrxcizk2Y4JQbJ/UzRQ=="/>
-		<POI MapID="1043" xpos="60.0202" ypos="332.12" zpos="473.307" type="tthp.hothpt.wm.wph" GUID="y7OUxDsgA0CvcnxRahE91w=="/>
-		<POI MapID="1043" xpos="-385.01" ypos="475.261" zpos="670.246" type="tthp.hothpt.wm.wph" GUID="rllE7nEC5UuCP433w8JHjg=="/>
+		<POI MapID="1043" xpos="-451.092" ypos="499.213" zpos="794.044" type="tthp.hothpt.rm.start" GUID="CatLsah05USNhiWX1uZhRg=="/>
+		<POI MapID="1043" xpos="-452.145" ypos="498.237" zpos="789.702" type="tthp.hothpt.mm.beetle" GUID="rB7TSMKOr0qFTH8aQrfgaw=="/>
+		<POI MapID="1043" xpos="-416.842" ypos="448.957" zpos="632.885" type="tthp.hothpt.mm.bondoffaith" GUID="nQR/Nd9E/kmsM0SjYkXQHQ=="/>
+		<POI MapID="1043" xpos="-404.631" ypos="330.49" zpos="565.301" type="tthp.hothpt.rm.caution" info="Difficulty: Hard&#xA;&#xA;Spawns a single Champion Mushroom King. Ranged HIGHLY recommended&#xA;&#xA;King is very aggressive and will do a mix of rushing at you, pulling you in and slamming his head in the ground.&#xA;&#xA;Red circle = slam (must evade, does big damage), Spin = pull (also important to evade or stun break immediately),&#xA;&#xA;Extra evades, stun breaks, projectile destruction/reflection, and shadowsteps/teleports are very useful to keep him at range. You can also kite him around the mushrooms (arrow) to obstruct the projectiles that pull you in." GUID="LNoJvFEa+0KEQ+I5CQ3oCg=="/>
+		<POI MapID="1043" xpos="-409.517" ypos="330.905" zpos="560.546" type="tthp.hothpt.mm.jackal" GUID="Iu0Q+6V1LkqtUrg7pg6ZSw=="/>
+		<POI MapID="1043" xpos="-424.285" ypos="304.16" zpos="430.32" type="tthp.hothpt.rm.caution" info="Either use Adrenal Mushroom, Health Recovery Food, or have someone else use Jackal pounce on you for the barrier" GUID="sHzoiAo62U2QRnvIqpedjg=="/>
+		<POI MapID="1043" xpos="-404.218" ypos="330.917" zpos="440.094" type="tthp.hothpt.mm.skyscale" GUID="bSOjEWa3ikexSksxLWgKQw=="/>
+		<POI MapID="1043" xpos="-387.746" ypos="369.233" zpos="329.121" type="tthp.hothpt.mm.distogriff" GUID="liLEc+nxukOswusQ4vff1g=="/>
+		<POI MapID="1043" xpos="-386.068" ypos="346.439" zpos="390.817" type="tthp.hothpt.rm.caution" script-focus="TehHP_HighlightWaypoint(PkqC6m6L8UGKFuP4nvb0xg==)" copy="[&amp;BNYHAAA=]" info="Next HP is a [Medium-Hard] combat HP with no close respawns. If you want to skip it, go continue from Wanderer's Waypoint&#xA;&#xA;If you are continuing, bamboo is bad, don't hit it." GUID="Xe/ixx8YfkuaN3arsbNmNg=="/>
+		<POI MapID="1043" xpos="-546.596" ypos="210.936" zpos="-305.185" type="tthp.hothpt.rm.caution" info="Difficulty: Medium-Hard&#xA;&#xA;Spawns 1 Veteran Golem and 2 (more if upscaled) normal golems. Ranged Recommended. Summons/pets/minions very helpful for distracting the other golems.&#xA;&#xA;Immediately focus the Veteran...compared to the others, it doesn't have much health, but does a lot of damage. The faster you kill it, the easier the fight.&#xA;&#xA;Once the vet is down, focus the others down one at a time. They are pretty easy to kite around, use the cliffs to your advantage. When you see them get in the punchy stance, use terrain to obstruct their projectiles. Big golems are normal, so CC skills work well on them." GUID="xVN3d8dd1kejC3h59AjAFg=="/>
+		<POI MapID="1043" xpos="-550.204" ypos="209.959" zpos="-306.419" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(PkqC6m6L8UGKFuP4nvb0xg==)" copy="[&amp;BNYHAAA=]" GUID="FI7KwJHbcU2VJxwv6AYuGg=="/>
+		<POI MapID="1043" xpos="-390.918" ypos="475.613" zpos="672.462" type="tthp.hothpt.mm.griffon" GUID="T/lzByFMPE2PfHzV0FvpCg=="/>
+		<POI MapID="1043" xpos="-385.108" ypos="475.25" zpos="670.055" type="tthp.pofhpt.wm.wph" GUID="PkqC6m6L8UGKFuP4nvb0xg=="/>
+		<POI MapID="1043" xpos="314.585" ypos="386.838" zpos="674.705" type="tthp.hothpt.mm.skyscale" info="Double dodge" GUID="+F+BnHw9S0SYZ6Dnqwkb5w=="/>
+		<POI MapID="1043" xpos="338.93" ypos="419.396" zpos="732.804" type="tthp.hothpt.mm.bondoffaith" GUID="+F+BnHw9S0SYZ6Dnqwkb5a=="/>
+		<POI MapID="1043" xpos="349.569" ypos="421.838" zpos="754.545" type="tthp.hothpt.mm.skyscale" GUID="axogoGWO9EO7UzpFTiy1UA=="/>
+		<POI MapID="1043" xpos="376.016" ypos="455.573" zpos="688.417" type="tthp.hothpt.mm.distogriff" GUID="xuOO4DZ+BEOlBk40JI75QA=="/>
+		<POI MapID="1043" xpos="548.595" ypos="345.976" zpos="243.055" type="tthp.hothpt.rm.caution" info="Difficulty: Medium-Hard&#xA;&#xA;Kill all veterans around the sign before starting!&#xA;&#xA;Spawns 1 champion and 2-4 Veteran Warriors. None of them are particularly dangerous alone, there's just a lot to deal with for a solo player. Recommend focusing down any archerers first, then the melee veterans, then the champion. Nothing much else special about this one." GUID="oLB2ZO7+r0WPOHv1zjC5mQ=="/>
+		<POI MapID="1043" xpos="544.287" ypos="348.485" zpos="233.946" type="tthp.hothpt.mm.skyscale" GUID="IcgitPwSr0Sq0UKqPghM2g=="/>
+		<POI MapID="1043" xpos="528.283" ypos="371.556" zpos="185.59" type="tthp.hothpt.mm.distogriff" GUID="pyRxYRW23k+nxql0g7EYRQ=="/>
+		<POI MapID="1043" xpos="575.91" ypos="314.795" zpos="-380.685" type="tthp.hothpt.rm.caution" info="Difficulty: Easy&#xA;&#xA;Summons a champion vinetooth. Ranged recommended. Summons/Pets/Minions help&#xA;&#xA;Kill all bombers before starting&#xA;&#xA;It's pretty easy to kite this guy, just don't stand directly in front of him and continuously loop him around in a circle, staying just off to his side. Otherwise, pretty simple fight." GUID="yjqVMWLkEUKfoYSq7aIPoQ=="/>
+		<POI MapID="1043" xpos="571.662" ypos="314.775" zpos="-375.188" type="tthp.hothpt.mm.raptor" GUID="bHGGt/PSh0uDnu1Tj4VBJw=="/>
+		<POI MapID="1043" xpos="447.878" ypos="314.258" zpos="-294.101" type="tthp.hothpt.mm.skyscale" GUID="U6Wx5bhH/ku1Aj7sFB6CLQ=="/>
+		<POI MapID="1043" xpos="384.266" ypos="338.777" zpos="-257.443" type="tthp.hothpt.mm.distogriff" GUID="HRC7vVlvOk2Mm8ffhoni9A=="/>
+		<POI MapID="1043" xpos="275.969" ypos="230.007" zpos="-825.696" type="tthp.hothpt.rm.caution" info="Difficulty: AFK&#xA;&#xA;Summons a champion Chak Lobber&#xA;&#xA;Equip ranged something. Start HP, immediately get on skyscale. Jump up on rock, sit on arrow. AFK and go put some popcorn in the microwave." GUID="h9stGuWDNkmWEQOFDMFq6Q=="/>
+		<POI MapID="1043" xpos="276.328" ypos="230.08" zpos="-822.395" type="tthp.hothpt.wm.tpm" copy="[&amp;BN0HAAA=]" script-focus="TehHP_HighlightWaypoint(qeF8ImkEGky8xxEDgP7nsw==)" GUID="LxzQqBBp/kypPzxLIQ8Keg=="/>
+		<POI MapID="1043" xpos="341.401" ypos="235.705" zpos="-673.621" type="tthp.hothpt.wm.wph" GUID="0ssjpMXwgU+ksfgVXkfZbQ=="/>
+		<POI MapID="1043" xpos="336.775" ypos="234.49" zpos="-670.541" type="tthp.hothpt.mm.beetle" GUID="TaObM6PmDk+Jq14j0V2R8g=="/>
+		<POI MapID="1043" xpos="-290.393" ypos="275.241" zpos="-746.78" type="tthp.hothpt.wm.tpm" copy="[&amp;BEkIAAA=]" script-focus="TehHP_HighlightWaypoint(0ssjpMXwgU+ksfgVXkfZbQ==)" GUID="/aCAP8Ijx0iLDsMilLbFdg=="/>
+		<POI MapID="1043" xpos="-287.505" ypos="274.716" zpos="-749.956" type="tthp.hothpt.rm.caution" info="You can technically stealth commune this if you have access to enough stealth...stealth before going in, wrap around behind fire to arrow, commune&#xA;&#xA;Difficulty: He's an avatar of a god, bro&#xA;&#xA;Jokes aside, he hits really hard and is really annoying for most builds. Kill his dogs first&#xA;&#xA;At 50% HP, unless you stun him by breaking his break bar, he will do a room-wide OHK move. Make sure to use the mushrooms to be on the ledges when he does it.&#xA;&#xA;Other than that, he just does a lot of damage. Try not to get burnt." GUID="Q+cmWwISMki/8GtGSMj5kA=="/>
+		<POI MapID="1043" xpos="60.0202" ypos="332.12" zpos="473.307" type="tthp.hothpt.wm.wph" GUID="qeF8ImkEGky8xxEDgP7nsw=="/>
+		<POI MapID="1043" xpos="69.2463" ypos="327.168" zpos="479.506" type="tthp.hothpt.mm.beetle" GUID="Os7wNdmQWEOQxZgYe/MIHw=="/>
+		<POI MapID="1043" xpos="139.655" ypos="307.315" zpos="389.838" type="tthp.hothpt.rm.caution" info="Difficulty: AFK&#xA;&#xA;Summons a champion Arrowhead&#xA;&#xA;Equip ranged something. Start HP, immediately get on skyscale. Jump up on rock, sit on arrow. AFK and go get the popcorn you put in the microwave earlier. Snack " GUID="dvyD+hlItEal2nBKHJCI1A=="/>
+		<POI MapID="1043" xpos="130.095" ypos="307.211" zpos="388.363" type="tthp.hothpt.mm.beetle" GUID="/CBRVjO/dUWQ51j9fh0UMg=="/>
+		<POI MapID="1043" xpos="124.163" ypos="198.978" zpos="118.373" type="tthp.hothpt.mm.griffon" GUID="iM8ss/6+iU+Cu3JcpVdNbQ=="/>
+		<POI MapID="1043" xpos="46.8409" ypos="265.355" zpos="201.676" type="tthp.hothpt.mm.griffon" GUID="fQ5Infv+bkqXtDN3bp6tjg=="/>
+		<POI MapID="1043" xpos="-10.0935" ypos="20.7515" zpos="119.383" type="tthp.hothpt.wm.tpm" copy="[&amp;BEkIAAA=]" script-focus="TehHP_HighlightWaypoint(0ssjpMXwgU+ksfgVXkfZbQ==)" GUID="tcC5U6n3IkSNPwsN9osW0g=="/>
+		<POI MapID="1043" xpos="-10.2586" ypos="20.7952" zpos="122.119" type="tthp.hothpt.rm.caution" info="Difficulty: Easy&#xA;&#xA;As long as you have some form of sustain over time, you should be able to easily out-sustain his damage. He hits moderately hard, but there's a lot of time in between. Pretty easy fight." GUID="Ep8buU2BAkK6yVgTpbthDg=="/>
+		<POI MapID="1043" xpos="344.016" ypos="235.951" zpos="-676.565" type="tthp.hothpt.rm.2" GUID="YUFdROvl+kOM26qUbRc9Ig=="/>
+		<POI MapID="1043" xpos="336.654" ypos="234.36" zpos="-673.45" type="tthp.pofhpt.rm.1" info="Path 1 is to Balthazar, for most builds he is very hard to solo. You can technically stealth commune, but it's really tricky. Or you can call reinforcements from map chat.&#xA;&#xA;Otherwise, take path 2 to TD!" GUID="amLn5CRGXUWxiMdh1pQ6sg=="/>
+		<POI MapID="1043" xpos="341.196" ypos="235.237" zpos="-678.135" type="tthp.hothpt.mm.beetle" GUID="mUuWOSngc0yKKqblxihKLw=="/>
+		<POI MapID="1043" xpos="515.445" ypos="216.991" zpos="-764.638" type="tthp.hothpt.rm.exit_map" GUID="+QBqkeE4Nk+xjLE4PBjllw=="/>
+		<POI MapID="1043" xpos="-13.5033" ypos="359.338" zpos="458.226" type="tthp.hothpt.rm.caution" infoRange="40" info="Don't miss unlocking the waypoint!" GUID="Vm5/UpV4VEyGnbfrCX/EKw=="/>
+		<POI MapID="1043" xpos="-414.98" ypos="333.991" zpos="577.885" type="tthp.hothpt.rm.a" GUID="6yNI/zHWTU6g9wUDrLTlZw=="/>
+		<POI MapID="1043" xpos="-438.865" ypos="305.383" zpos="430.765" type="tthp.hothpt.rm.a" GUID="FsKUVN/GFEO53Z+pTVsLIA=="/>
+		<POI MapID="1043" xpos="293.086" ypos="238.457" zpos="-821.51" type="tthp.hothpt.rm.a" GUID="h8aE8wChL0OjvgYN/3GDVg=="/>
+		<POI MapID="1043" xpos="170.423" ypos="320.806" zpos="396.778" type="tthp.hothpt.rm.a" GUID="sGScyY+/vEek/23o+MkYPg=="/>
 		<!--TANGLED DEPTHS MARKERS-->
-		<POI MapID="1045" xpos="-426.598" ypos="15.0214" zpos="-374.591" type="tthp.hothpt.rm.a" GUID="goPshDzt20aMdizrJxvVjQ=="/>
-		<POI MapID="1045" xpos="-497.392" ypos="322.144" zpos="-59.3565" type="tthp.hothpt.rm.portal" GUID="3Dv9dbFCpkiknVGkmyG6cA=="/>
-		<POI MapID="1045" xpos="-527.682" ypos="306.792" zpos="-146.582" type="tthp.hothpt.rm.portal" GUID="x2mbzrtIZ0q3gpxQVidBCw=="/>
-		<POI MapID="1045" xpos="-543.198" ypos="305.21" zpos="-142.929" type="tthp.hothpt.rm.portal" GUID="f/9IhBALqUKeXCpa0joEeg=="/>
-		<POI MapID="1045" xpos="-565.193" ypos="198.85" zpos="-99.4703" type="tthp.hothpt.mm.springer" GUID="d2M8SzW3+k6flejZEKWn5A=="/>
-		<POI MapID="1045" xpos="-569.443" ypos="198.232" zpos="-99.7804" type="tthp.hothpt.rm.portal" GUID="zP9BHK7DzEiutATrWf59pg=="/>
-		<POI MapID="1045" xpos="-594.228" ypos="282.311" zpos="-298.268" type="tthp.hothpt.rm.portal" GUID="nuVOhrb+z0CIQd52m6+V3Q=="/>
-		<POI MapID="1045" xpos="-599.7" ypos="277.482" zpos="-229.62" type="tthp.hothpt.rm.portal" GUID="9Q5S3U4Qo0muXJwyIpP6KQ=="/>
-		<POI MapID="1045" xpos="-691.738" ypos="240.605" zpos="192.623" type="tthp.hothpt.rm.start" GUID="GtyFiUnwMk+smfU99bedqQ=="/>
-		<POI MapID="1045" xpos="-709.06" ypos="241.682" zpos="203.932" type="tthp.hothpt.rm.2" GUID="pMR6vhKf0UCnyPPB/WVdUA=="/>
-		<POI MapID="1045" xpos="-711.171" ypos="241.577" zpos="203.349" type="tthp.hothpt.rm.3" GUID="IXI+OUj3mEqBw79MUtpVqw=="/>
-		<POI MapID="1045" xpos="-850.742" ypos="37.7568" zpos="-300.73" type="tthp.hothpt.rm.a" GUID="m7wOlYRLf0CASI0x5A0ang=="/>
-		<POI MapID="1045" xpos="165.468" ypos="130.464" zpos="57.3873" type="tthp.hothpt.rm.portal" GUID="WxR5/9QFYkOTgWEGS1mTsw=="/>
-		<POI MapID="1045" xpos="251.506" ypos="202.147" zpos="225.696" type="tthp.hothpt.rm.portal" GUID="CedWn0Yf80SS/P8ZNQ0lkg=="/>
-		<POI MapID="1045" xpos="480.347" ypos="54.3438" zpos="-81.1716" type="tthp.hothpt.rm.portal" GUID="4Lc1DlmoR0G7AojyYuDWIA=="/>
-		<POI MapID="1045" xpos="492.859" ypos="58.3338" zpos="447.726" type="tthp.hothpt.rm.portal" GUID="SlwusS6RAEOODHejs0lhsw=="/>
-		<POI MapID="1045" xpos="496.29" ypos="19.3583" zpos="36.6578" type="tthp.hothpt.rm.portal" GUID="wTYvI2om7U249P0WN2ZciQ=="/>
-		<POI MapID="1045" xpos="533.551" ypos="31.1538" zpos="430.09" type="tthp.hothpt.rm.portal" GUID="hhl9bJUcGUOLkDqC2o/cTg=="/>
-		<POI MapID="1045" xpos="85.8919" ypos="188.041" zpos="86.462" type="tthp.hothpt.rm.portal" GUID="ewChE+PIfEqf2lpsIl56WA=="/>
-		<POI MapID="1045" xpos="-710.699" ypos="241.622" zpos="206.291" type="tthp.hothpt.wm.wph" GUID="JjYAY6yINkCzJSdV9O9pLQ=="/>
-		<POI MapID="1045" xpos="441.845" ypos="0.859565" zpos="142.758" type="tthp.hothpt.wm.wph" GUID="iaE/ci/bBEqQiCbXynWd6w=="/>
-		<POI MapID="1045" xpos="303.063" ypos="14.364" zpos="-78.4297" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(iaE/ci/bBEqQiCbXynWd6w==)" GUID="zqSkwUHYc0yTcdGuhNd+ZA=="/>
-		<POI MapID="1045" xpos="414.662" ypos="20.1485" zpos="449.212" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(JjYAY6yINkCzJSdV9O9pLQ==)" GUID="Mr+/Vb1zaUGH/Avd6XOA5g=="/>
-		<POI MapID="1045" xpos="-712.363" ypos="77.9374" zpos="-48.9848" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(JjYAY6yINkCzJSdV9O9pLQ==)" GUID="iQGUrW9/REClXqZHI63pOQ=="/>
+		<POI MapID="1045" xpos="-786.079" ypos="254.982" zpos="159.931" type="tthp.hothpt.rm.start" GUID="CD3EW+Cgl0ieNHSnMK0+TA=="/>
+		<POI MapID="1045" xpos="-785.243" ypos="255.935" zpos="156.753" type="tthp.hothpt.mm.skyscale" GUID="JebrENP0qEOgE/X8IiAwyQ=="/>
+		<POI MapID="1045" xpos="-773.555" ypos="263.456" zpos="61.3357" type="tthp.hothpt.mm.bondoffaith" GUID="qbBUccdO7UiHhCqNnALgqA=="/>
+		<POI MapID="1045" xpos="-783.181" ypos="250.022" zpos="18.4558" type="tthp.hothpt.rm.a" GUID="f/MU1SLa0UaXLNR4uAte7Q=="/>
+		<POI MapID="1045" xpos="-394.679" ypos="72.5435" zpos="519.416" type="tthp.hothpt.mm.jackal" GUID="jYTHC3v8a0GlrF2kJml25g=="/>
+		<POI MapID="1045" xpos="-225.772" ypos="111.746" zpos="545.795" type="tthp.hothpt.rm.a" GUID="KmE/WbSefE+pmt41vOPtbQ=="/>
+		<POI MapID="1045" xpos="28.8604" ypos="125.658" zpos="377.715" type="tthp.hothpt.wm.wph" GUID="ohMcL+mFoUOYrTPA5NBhpg=="/>
+		<POI MapID="1045" xpos="41.8637" ypos="125.598" zpos="392.862" type="tthp.hothpt.rm.caution" info="Make sure to unlock waypoint!" infoRange="5" GUID="udMG0akc+ku1RisecfCzgQ=="/>
+		<POI MapID="1045" xpos="64.7638" ypos="126.343" zpos="381.35" type="tthp.hothpt.rm.a" GUID="oZIa+LdXMEGe2FEDfWLANA=="/>
+		<POI MapID="1045" xpos="90.1378" ypos="37.3056" zpos="55.4444" type="tthp.pofhpt.mm.beetle" GUID="W8zU/rWspkSunYH/w6AuCg=="/>
+		<POI MapID="1045" xpos="234.29" ypos="3.4253" zpos="85.9734" type="tthp.hothpt.rm.a" GUID="C4twX+qDfkWsBlikeSizIA=="/>
+		<POI MapID="1045" xpos="516.734" ypos="7.83043" zpos="181.076" type="tthp.hothpt.mm.skimmer" GUID="gVlShZnjuUSX7zh65j2S6Q=="/>
+		<POI MapID="1045" xpos="437.321" ypos="-139.493" zpos="144.348" type="tthp.hothpt.rm.caution" info="Grab crystal and immediately mount back up" GUID="KPpwM3766UK8f2eddAe/IA=="/>
+		<POI MapID="1045" xpos="536.948" ypos="31.0248" zpos="431.81" type="tthp.hothpt.mm.skyscale" GUID="y7MaPrZ7OUO6VIXDQHPbyw=="/>
+		<POI MapID="1045" xpos="465.149" ypos="16.6644" zpos="436.659" type="tthp.eodhp.rm.caution" info="The HP after this is a [Very Hard] difficulty combat HP. If you don't want to do it, you can TP to Teku Nuhoch Waypoint after communing&#xA;&#xA;Otherwise, Interact -> Commune -> Interact with all consoles to open door&#xA;&#xA;This is on a timer, so you have to be somewhat quick" copy="[&amp;BAwIAAA=]" script-focus="TehHP_HighlightWaypoint(ohMcL+mFoUOYrTPA5NBhpg==)" GUID="IPrWzjpcwk+hOBS30m+qvA=="/>
+		<POI MapID="1045" xpos="393.522" ypos="47.8733" zpos="440.75" type="tthp.hothpt.rm.dismount" GUID="yFezn8ctT0m26Jl/7udITQ=="/>
+		<POI MapID="1045" xpos="474.391" ypos="1.198" zpos="147.297" type="tthp.hothpt.rm.caution" info="If Rata Novus Waypoint is contested AND you are doing [Very Hard] difficulty combat HPs, waypoint back to Teku Nuhoch Waypoint and come back later, when it isn't contested (make sure you unlocked the waypoint!)&#xA;&#xA;If you aren't planning on doing the [Hard] combat HP, then you can keep going regardless" infoRange="25" copy="[&amp;BAwIAAA=]" script-focus="TehHP_HighlightWaypoint(ohMcL+mFoUOYrTPA5NBhpg==)" GUID="JE5z+Koly0i6YXSKjHWDQA=="/>
+		<POI MapID="1045" xpos="303.526" ypos="15.118" zpos="-80.405" type="tthp.hothpt.rm.caution" info="Difficulty: Very Hard&#xA;&#xA;Summons a champion Mushroom Queen. Ranged highly recommended.&#xA;&#xA;Mostly, she throws around damaging AoE circles and exploding sporelings. Problem is, it's very tight quarters and you can't lure her out or she will deaggro&#xA;&#xA;If you have multiple people, it gets significantly easier and any squishies can sit on the mushrooms (arrows) to avoid most damage&#xA;&#xA;" GUID="udNG0akc+ku1RisecfCzgQ=="/>
+		<POI MapID="1045" xpos="302.218" ypos="15.055" zpos="-82.347" type="tthp.hothpt.wm.tpm" copy="[&amp;BAwIAAA=]" script-focus="TehHP_HighlightWaypoint(ohMcL+mFoUOYrTPA5NBhpg==)" GUID="udIT0akc+ku1RisecfCzgQ=="/>
+		<POI MapID="1045" xpos="28.4665" ypos="125.639" zpos="382.269" type="tthp.hothpt.rm.1" GUID="GGaZpHzem0ug//kkxn8ZpA=="/>
+		<POI MapID="1045" xpos="33.8619" ypos="126.244" zpos="378.161" type="tthp.hothpt.rm.2" GUID="gWodm/jLlk+IAaFd5Qh/sQ=="/>
+		<POI MapID="1045" xpos="22.6296" ypos="127.067" zpos="413.468" type="tthp.hothpt.rm.a" GUID="ZA1972ogDkqNbhnqfcgC1w=="/>
+		<POI MapID="1045" xpos="-212.812" ypos="3.00091" zpos="-30.7433" type="tthp.hothpt.mm.beetle" GUID="Q9CCqt4Dlk+svQSzgVJlkQ=="/>
+		<POI MapID="1045" xpos="-292.389" ypos="1.58542" zpos="172.985" type="tthp.hothpt.rm.a" GUID="TFt+7edfsUWqKpzP3U0YrA=="/>
+		<POI MapID="1045" xpos="-380.822" ypos="1.07766" zpos="287.937" type="tthp.hothpt.mm.beetle" GUID="qDTt3CeSvUCHg1qtSch1Cw=="/>
+		<POI MapID="1045" xpos="-575.948" ypos="10.1589" zpos="390.193" type="tthp.hothpt.rm.stealth" GUID="FyCZw7JoSEmrUghz74izHQ=="/>
+		<POI MapID="1045" xpos="-578.343" ypos="9.46268" zpos="391.989" type="tthp.hothpt.wm.tpm" copy="[&amp;BAwIAAA=]" script-focus="TehHP_HighlightWaypoint(ohMcL+mFoUOYrTPA5NBhpg==)" GUID="wi4pW0zaYkKyE+DsK8GaCw=="/>
+		<POI MapID="1045" xpos="39.7926" ypos="127.031" zpos="378.3" type="tthp.hothpt.mm.jackal" GUID="CQKSrOLnskSVSY3/qOVCKA=="/>
+		<POI MapID="1045" xpos="33.5809" ypos="187.111" zpos="427.632" type="tthp.hothpt.mm.skyscale" GUID="beO2ofE/lkipqXp8GIWBrQ=="/>
+		<POI MapID="1045" xpos="9.35804" ypos="225.072" zpos="365.871" type="tthp.hothpt.rm.dismount" GUID="pYpEqQyRM0qwdmGDJ0H3Cg=="/>
+		<POI MapID="1045" xpos="-11.6082" ypos="257.147" zpos="383.44" type="tthp.hothpt.rm.jadewp" GUID="Dsh4E6IySkaP+usjO3GWqw=="/>
+		<POI MapID="1045" xpos="-41.0364" ypos="258.924" zpos="386.916" type="tthp.hothpt.mm.griffon" GUID="VDcIQ1MfTEOotfEPrJZVcw=="/>
+		<POI MapID="1045" xpos="-220.206" ypos="233.84" zpos="356.009" type="tthp.hothpt.rm.jadewp" GUID="Xg1Z+KwV8UGUNpj6I0vj0Q=="/>
+		<POI MapID="1045" xpos="-182.605" ypos="252.539" zpos="392.011" type="tthp.hothpt.rm.caution" info="Difficulty: Medium-Hard&#xA;&#xA;Summons a champion Frawg&#xA;&#xA;Before summoning, kill all the surrounding mobs. If you have decent ranged damage, you can kill many of them from the arrow before dropping down to finish the rest&#xA;&#xA;Once summoned, it is highly recommended to pull the champ to the other arrow, so that you don't get gangbanged when the other enemies respawn&#xA;&#xA;The champ itself isn't too bad, although he is tanky and hits hard. Pets/Summons/Minions are recommended to take aggro. CC is helpful" GUID="vZ493Q5uQkOAdnfAizyVsw=="/>
+		<POI MapID="1045" xpos="-18.4225" ypos="257.287" zpos="385.009" type="tthp.hothpt.rm.caution" info="Ahead is a [Medium-Hard] combat HP. If you want to skip it, just follow the Jade WP trail&#xA;&#xA;Otherwise, place a Jade WP." GUID="KHOmQmGcYUaRjdzimKpJnw=="/>
+		<POI MapID="1045" xpos="182.841" ypos="185.412" zpos="137.202" type="tthp.hothpt.wm.tpm" copy="[&amp;BA4IAAA=]" script-focus="TehHP_HighlightWaypoint(zOEbZJqv30K6H141ZjOM/A==)" GUID="6QWLNdUdt0qBb1ZXYOm+dA=="/>
+		<POI MapID="1045" xpos="184.333" ypos="185.707" zpos="134.483" type="tthp.hothpt.rm.stealth" GUID="62p0W+Kno0KehEifSIbEbQ=="/>
+		<POI MapID="1045" xpos="141.755" ypos="200.704" zpos="167.446" type="tthp.hothpt.rm.dismount" GUID="oxSlURrGx0akp3oxdLs+SA=="/>
+		<POI MapID="1045" xpos="167.234" ypos="203.405" zpos="147.019" type="tthp.hothpt.rm.caution" info="Difficult: Easy or Hard&#xA;&#xA;If you have can stack stealth, you can stealth-commune this HP:&#xA;Drop to Arrow -> Stealth up before getting in range -> Commune -> Run back to arrow or die then wp out. You must stealth yourself before getting close (so no ALSK) otherwise you will get CC'd and wrecked&#xA;&#xA;If no stealth but have ranged: You can kill most of the mobs from the caution sign. DO NOT ATTACK THE KING. He will pull you off the cliff. Kill everything else you can, then kill the king, then commune&#xA;&#xA;If you don't have stealth or ranged...I hope you have lots of stability, stun-breaks and sustain. Preferably kill the little dudes first, then queen, then king. Good luck!" GUID="HRNt8851R0+Ia0pBba8Vyw=="/>
+		<POI MapID="1045" xpos="-13.2011" ypos="257.324" zpos="378.441" type="tthp.hothpt.mm.griffon" GUID="M/B0f40TFUuJ4zNwkcaJlA=="/>
+		<POI MapID="1045" xpos="147.981" ypos="200.042" zpos="160.714" type="tthp.hothpt.mm.skyscale" GUID="uml659LSF0q5vqIoAI5VaA=="/>
+		<POI MapID="1045" xpos="-703.65" ypos="241.829" zpos="203.286" type="tthp.hothpt.rm.1" GUID="Bo4MAT1cwUql/ky9og/skw=="/>
+		<POI MapID="1045" xpos="-709.01" ypos="241.616" zpos="199.381" type="tthp.hothpt.rm.2" GUID="r6DJA6g81keg0hmHaENXGA=="/>
+		<POI MapID="1045" xpos="-704.097" ypos="241.834" zpos="199.345" type="tthp.hothpt.mm.beetle" GUID="14x6+PYaDE+xK6DoIZJNMA=="/>
+		<POI MapID="1045" xpos="-710.685" ypos="241.634" zpos="206.029" type="tthp.hothpt.wm.wph" GUID="zOEbZJqv30K6H141ZjOM/A=="/>
+		<POI MapID="1045" xpos="-705.726" ypos="241.778" zpos="203.399" type="tthp.hothpt.rm.caution" info="Path 1 (left) leads to a [Easy-Medium] combat HP. If you want to skip it, just go path 2." GUID="tQ66azIoPkKiJPUos4p2IQ=="/>
+		<POI MapID="1045" xpos="-597.948" ypos="215.186" zpos="175.554" type="tthp.hothpt.mm.bondoffaith" GUID="fKTjx8xL/UKWWY80FaHsWQ=="/>
+		<POI MapID="1045" xpos="-559.273" ypos="196.184" zpos="191.354" type="tthp.hothpt.mm.griffon" GUID="TydEjVCmR0CU252g71sDGw=="/>
+		<POI MapID="1045" xpos="-711.924" ypos="78.0419" zpos="-51.3797" type="tthp.hothpt.wm.tpm" copy="[&amp;BA4IAAA=]" script-focus="TehHP_HighlightWaypoint(zOEbZJqv30K6H141ZjOM/A==)" GUID="BeVEZYMaeEqqKGfBGvoFFQ=="/>
+		<POI MapID="1045" xpos="-711.463" ypos="78.0223" zpos="-48.7289" type="tthp.hothpt.rm.caution" info="Difficulty: Easy-Medium&#xA;&#xA;Summons a champion Troll. Condi Cleanse = Easy fight&#xA;&#xA;Before summoning, kill all nearby trolls or they WILL end up ganking you mid-fight&#xA;&#xA;His basic attacks cause Bleed and it can stack very fast, so having good condi cleanse is the key for this fight. Other than that, he doesn't do much damage, so just wittle him down while managing the bleed stacks" GUID="Boq700VZoEebzFdKP/YjPQ=="/>
+		<POI MapID="1045" xpos="-572.339" ypos="201.547" zpos="-69.8032" type="tthp.hothpt.mm.skyscale" GUID="jYyM1uAygk6FUcCeXOp5OQ=="/>
+		<POI MapID="1045" xpos="-539.428" ypos="305.25" zpos="-141.471" type="tthp.hothpt.mm.griffon" info="This dive is a bit tight...you're going straight down and then backwards into the cave, through a tight gap, then pulling up hard. If you aren't confident in your griffon skills, recommend placing PPR in case you bonk" GUID="JH0TbqJjjEiWmCdHVMWsLg=="/>
+		<POI MapID="1045" xpos="-572.22" ypos="282.833" zpos="-309.991" type="tthp.hothpt.rm.caution" info="Difficulty: Mostly AFK&#xA;&#xA;Summons a champion Spider Queen and Vampire Beasts&#xA;&#xA;Start HP, immediately jump up onto the root and run all the way up to the top arrow&#xA;&#xA;Use ranged to kill the vampire beasts from there. Once dead, move down to the lower arrow and you can literally just autoattack to the spider queen to death. She will occasionally hit you with her poison breath, but it's not a big deal. Practice your golem rotation on her if you want" GUID="RWlVFww9KUKZ8nKtb5dzEQ=="/>
+		<POI MapID="1045" xpos="-530.282" ypos="282.421" zpos="-321.702" type="tthp.hothpt.mm.griffon" info="This dive is also somewhat tight...you're spiraling down aiming for the hole in the ground. It's not a big deal if you bonk though, just make sure you have some speed after going through the hole to reach the next HP" GUID="+npNluatekqgs2vFCbfTgQ=="/>
+		<POI MapID="1045" xpos="-480.881" ypos="6.43639" zpos="-503.819" type="tthp.hothpt.rm.caution" info="Difficulty: Easy-Medium&#xA;&#xA;Summons a champion Chak Blitzer and 2 normal Chak. Melee required&#xA;&#xA;Before starting, kill all nearby Chak. Be especially wary of the roaming group with a veteran.&#xA;&#xA;The Blitzer herself is not a very big threat. Immediately focus all the small chak. Once alone, just keep yourself behind the Blitzer and she will be unable to hit you with anything. Melee is required because otherwise she will destroy your projectiles and kill you with retaliation&#xA;&#xA;The most important thing is to keep an eye on surrounding chak and make sure you don't get surprised. If any extra mobs get aggro'd, immediately switch focus to them. Your priority should always be normal -> veterans -> blitzer." GUID="h8ldjvQEQEyCAPteCF22Fg=="/>
+		<POI MapID="1045" xpos="-491.538" ypos="6.47468" zpos="-501.14" type="tthp.hothpt.mm.beetle" GUID="tmGbsk8LG0mBVOeV8Mh5wQ=="/>
+		<POI MapID="1045" xpos="-796.086" ypos="-0.677907" zpos="-431.286" type="tthp.hothpt.mm.skyscale" GUID="uYKKn9P+dEOyZTA/o7Z7HQ=="/>
+		<POI MapID="1045" xpos="-824.673" ypos="60.8079" zpos="-441.04" type="tthp.hothpt.rm.caution" info="Difficulty: Easy-Hard, Depends on your RNG&#xA;&#xA;IF YOU ARE WORRIED ABOUT DYING, PLACE PPR HERE AND GO GRAB DRAGON'S PASSAGE WAYPOINT&#xA;&#xA;Summons one of three champions (Punisher, Stalker, Sniper)&#xA;&#xA;Punisher is the easiest, just stick to his back and don't get hit by his slam&#xA;&#xA;Stalker is also pretty easy as long as you have range. If you do, you can just kite them around in circles. His moves do a lot of damage if you get caught in them, so don't&#xA;&#xA;Sniper is hard, either needing a very tanky build, distractions (pets/minions/etc), projectile hate, or a lot of evades. Melee is not advised, as his kick move does a lot of damage. Honestly, if you get sniper, I recommend just skipping and trying again later&#xA;&#xA;Additional adds are spawned every 25%. If you are unlucky, one of them will be a Desolator, which is invicible most the time and does a jump slam attack that does a lot of damage. Also CC does nothing to them, so you have to just run around and wait for them to go vulnerable. Good luck!" GUID="L/bJvUPypECL4bGa0NSByQ=="/>
+		<POI MapID="1045" xpos="-830.583" ypos="60.7377" zpos="-434.813" type="tthp.hothpt.mm.raptor" GUID="z3oix5Ptjkmz4kHyQefgcg=="/>
+		<POI MapID="1045" xpos="-871.53" ypos="-1.0473" zpos="-291.715" type="tthp.hothpt.mm.skimmer" GUID="KdKiwff1Y0yBSWJDPGwXpA=="/>
+		<POI MapID="1045" xpos="-835.175" ypos="-156.453" zpos="-308.839" type="tthp.hothpt.rm.a" info="Grab crystal then mount back up. Crystal will prevent mobs from attacking you while you commune" GUID="6nD4J0GMwUCu+Novell2TQ=="/>
+		<POI MapID="1045" xpos="-616.019" ypos="-219.954" zpos="-260.349" type="tthp.hothpt.rm.finish" info="You've finished Teh's Trails HoT Hero Points! Well done!" GUID="mmKIIfm+6kWK6xCN+gnRzg=="/>
+		<POI MapID="1045" xpos="296.484" ypos="28.4895" zpos="-58.6547" type="tthp.hothpt.rm.a" GUID="DyzwHbGKUEa4aAWL4CdK5A=="/>
+		<POI MapID="1045" xpos="297.317" ypos="31.4177" zpos="-70.4196" type="tthp.hothpt.rm.a" GUID="JMU4mpGlbkOfgSbsPy3TAw=="/>
+		<POI MapID="1045" xpos="-211.004" ypos="233.068" zpos="396.938" type="tthp.hothpt.rm.a" GUID="SpffLIPuI0O4jf6/quJlBA=="/>
+		<POI MapID="1045" xpos="-186.058" ypos="252.032" zpos="390.825" type="tthp.hothpt.rm.a" GUID="WPCaTwHhbUuwRf8qxIm2eQ=="/>
+		<POI MapID="1045" xpos="155.523" ypos="185.212" zpos="134.499" type="tthp.hothpt.rm.a" GUID="rXx8PTZHYkiEXsuqTEgKoA=="/>
+		<POI MapID="1045" xpos="-726.208" ypos="85.0249" zpos="-56.9163" type="tthp.hothpt.rm.a" GUID="WRTF/R4tvUKd+gEHlHbnBQ=="/>
+		<POI MapID="1045" xpos="-592.187" ypos="211.1" zpos="-14.6151" type="tthp.hothpt.mm.bondoffaith" GUID="RTUN2Y4DUECHiTZq018BzQ=="/>
+		<POI MapID="1045" xpos="-586.163" ypos="287.762" zpos="-314.962" type="tthp.hothpt.rm.a" GUID="+FuZNP6UDUKgHqqxwBHB8g=="/>
+		<POI MapID="1045" xpos="-589.933" ypos="296.166" zpos="-325.002" type="tthp.hothpt.rm.a" GUID="f7qj3Rh0AUKtQU8sO+8nOw=="/>
+		<POI MapID="1045" xpos="-827.996" ypos="60.5449" zpos="-445.055" type="tthp.hothpt.rm.ppr_m" GUID="9JoAl1XbLkW2QD1eBpWBHw=="/>
+		<POI MapID="1045" xpos="-814.69" ypos="12.693" zpos="-560.637" type="tthp.hothpt.rm.ppr_r" GUID="9ToAl1XbLkW2QD1eBpWBHw=="/>
+		<POI MapID="1045" xpos="-831.38" ypos="60.051" zpos="-456.039" type="tthp.hothpt.mm.griffon" GUID="9YoAl1XbLkW2QD1eBpWBHw=="/>
 		<!--VERDANT BRINK MARKERS-->
-		<POI MapID="1052" xpos="-323.754" ypos="571.918" zpos="-286.909" type="tthp.hothpt.rm.portal" GUID="zrrnAPIFiEeitKm6OSwEzA=="/>
-		<POI MapID="1052" xpos="-333.627" ypos="568.882" zpos="-251.628" type="tthp.hothpt.rm.portal" GUID="eZzCMJbEc0eT1cM1BxGSRQ=="/>
-		<POI MapID="1052" xpos="-368.004" ypos="492.023" zpos="-239.227" type="tthp.hothpt.rm.portal" GUID="2lBJSZ9FPEyN3hpWsFZm/Q=="/>
-		<POI MapID="1052" xpos="-371.342" ypos="412.463" zpos="-258.535" type="tthp.hothpt.rm.a" GUID="VnvaAiLu0EKnjd6jI+tXPQ=="/>
-		<POI MapID="1052" xpos="-371.361" ypos="412.56" zpos="-262.828" type="tthp.hothpt.rm.portal" GUID="rmh8j987SEisisFfHfSr2Q=="/>
-		<POI MapID="1052" xpos="-389.059" ypos="492.236" zpos="-269.352" type="tthp.hothpt.rm.portal" GUID="nNk0toVxsUOuWReOzRr/OQ=="/>
-		<POI MapID="1052" xpos="-520.07" ypos="514.423" zpos="-280.672" type="tthp.hothpt.rm.a" GUID="vGLr9oXYik+/lL3qZc+kIg=="/>
-		<POI MapID="1052" xpos="-521.61" ypos="513.729" zpos="-277.222" type="tthp.hothpt.rm.2" GUID="r8r5vmg7JUKIOjNpHqv1ew=="/>
-		<POI MapID="1052" xpos="-524.229" ypos="514.382" zpos="-281.523" type="tthp.hothpt.rm.1" GUID="P44yeevhi0GglLIecQjVJA=="/>
-		<POI MapID="1052" xpos="-528.863" ypos="512.807" zpos="-277.7" type="tthp.hothpt.rm.3" GUID="tWkkheRgAEyukm6PXAMVCA=="/>
-		<POI MapID="1052" xpos="-604.112" ypos="445.818" zpos="181.233" type="tthp.hothpt.rm.portal" GUID="pnFxKNiEuUKL4OgLUb9obg=="/>
-		<POI MapID="1052" xpos="-655.829" ypos="455.066" zpos="178.609" type="tthp.hothpt.rm.portal" GUID="VVaOGezh/UmsFxaFcMjbRA=="/>
-		<POI MapID="1052" xpos="-657.355" ypos="453.665" zpos="178.353" type="tthp.hothpt.rm.a" GUID="d6Rh72vYq0WgQSgZahMaVg=="/>
-		<POI MapID="1052" xpos="-765.475" ypos="377.266" zpos="-395.972" type="tthp.hothpt.rm.1" GUID="10HJtZmvq02nbsdvqa9PyQ=="/>
-		<POI MapID="1052" xpos="-773.275" ypos="378.435" zpos="-399.437" type="tthp.hothpt.rm.2" GUID="GsrFXh921EapGnqlYnfXAg=="/>
-		<POI MapID="1052" xpos="171.984" ypos="660.491" zpos="96.2503" type="tthp.hothpt.rm.portal" GUID="IHEQtyIkbEC2IfZ5cREF6Q=="/>
-		<POI MapID="1052" xpos="369.762" ypos="434.897" zpos="-382.609" type="tthp.hothpt.rm.a" GUID="5l8ub+u0qEKnY1Tp6J9IKg=="/>
-		<POI MapID="1052" xpos="485.257" ypos="366.405" zpos="268.244" type="tthp.hothpt.rm.portal" GUID="163Mkqg1nkCyjUWv9uOQ5w=="/>
-		<POI MapID="1052" xpos="503.134" ypos="416.53" zpos="284.392" type="tthp.hothpt.rm.portal" GUID="JyOmZ+cehkOzsoCwegUo5A=="/>
-		<POI MapID="1052" xpos="509.599" ypos="415.381" zpos="280.052" type="tthp.hothpt.rm.a" GUID="ujBJE1OCWUiBi8wobnnb2g=="/>
-		<POI MapID="1052" xpos="612.292" ypos="456.176" zpos="-417.411" type="tthp.hothpt.rm.a" GUID="QgYRtVyNXUi0us5HdWcy9w=="/>
-		<POI MapID="1052" xpos="619.346" ypos="456.261" zpos="-429.049" type="tthp.hothpt.rm.portal" GUID="rIPowiXGY0yE/DD46RNR4A=="/>
-		<POI MapID="1052" xpos="656.419" ypos="397.278" zpos="-356.56" type="tthp.hothpt.rm.portal" GUID="s02HYHfKJUOdTJVjYNVmOA=="/>
-		<POI MapID="1052" xpos="689.966" ypos="387.297" zpos="-0.729907" type="tthp.hothpt.rm.a" GUID="7t3iIx7fqUSET9QQpqR8Jw=="/>
-		<POI MapID="1052" xpos="711.303" ypos="351.31" zpos="-211.091" type="tthp.hothpt.rm.a" GUID="mBEsPcjZYkqPUZI2d2laYg=="/>
-		<POI MapID="1052" xpos="864.857" ypos="431.331" zpos="51.0418" type="tthp.hothpt.rm.start" GUID="hnCnDzhTxkSnVntPjVxrZg=="/>
-		<POI MapID="1052" xpos="887.476" ypos="427.024" zpos="46.0726" type="tthp.hothpt.rm.a" GUID="D8EGSwH+bkmaFXGsgwVJfA=="/>
-		<POI MapID="1052" xpos="908.12" ypos="422.917" zpos="70.4933" type="tthp.hothpt.rm.a" GUID="E20S7cTHpEuqSwbb30kexQ=="/>
-		<POI MapID="1052" xpos="930.641" ypos="419.242" zpos="50.5937" type="tthp.hothpt.rm.3" GUID="BzlYhzJF1UKx3+186k4Skw=="/>
-		<POI MapID="1052" xpos="931.37" ypos="419.066" zpos="53.9848" type="tthp.hothpt.rm.2" GUID="k8dbBke5p0yl0zNBYpR33Q=="/>
-		<POI MapID="1052" xpos="95.1589" ypos="688.147" zpos="19.8617" type="tthp.hothpt.rm.portal" GUID="hKJpqr2L50G9wqI49NZUXg=="/>
-		<POI MapID="1052" xpos="580.971" ypos="11.2427" zpos="-33.1407" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(3RTZCfDjHEGNzJ0eqHP2nQ==)" GUID="V007x7BjEUCWONpdoTl0Iw=="/>
-		<POI MapID="1052" xpos="353.511" ypos="164.532" zpos="140.141" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(3RTZCfDjHEGNzJ0eqHP2nQ==)" GUID="4d32/naSbkmHmk8H7FYmkg=="/>
-		<POI MapID="1052" xpos="-595.497" ypos="443.885" zpos="186.474" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(lTGj1/biUkumQ1hx0GOM4w==)" GUID="vMZfhf0ZB0euK2tZ5iZ20w=="/>
-		<POI MapID="1052" xpos="936.244" ypos="418.129" zpos="50.8373" type="tthp.hothpt.wm.wph" GUID="3RTZCfDjHEGNzJ0eqHP2nQ=="/>
-		<POI MapID="1052" xpos="-524.787" ypos="513.685" zpos="-278.64" type="tthp.hothpt.wm.wph" GUID="lTGj1/biUkumQ1hx0GOM4w=="/>
-		<POI MapID="1052" xpos="-72.4939" ypos="26.7284" zpos="-134.121" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(lTGj1/biUkumQ1hx0GOM4w==)" GUID="t+M7wwPOw0GJ9TniBS85rw=="/>
-		<POI MapID="1052" xpos="-398.365" ypos="148.158" zpos="-113.678" type="tthp.hothpt.wm.tpm" script-focus="TehHP_HighlightWaypoint(lTGj1/biUkumQ1hx0GOM4w==)" GUID="V1X/j192lUaC2jf7iDE+BA=="/>
-		<POI MapID="1052" xpos="-769.718" ypos="377.791" zpos="-397.872" type="tthp.hothpt.wm.wph" GUID="xPIFP47mi0+kdrOUbDfv1w=="/>
-		<POI MapID="1052" xpos="-702.482" ypos="361.758" zpos="-350.456" type="tthp.hothpt.wm.wph" GUID="dCusxFmmfkO0C5mdLmuM1A=="/>
-
+		<POI MapID="1052" xpos="933.052" ypos="418.783" zpos="51.9828" type="tthp.hothpt.rm.start" info="This is the start of the Teh's Trails HoT Hero Point trail!&#xA;&#xA;While you don't have to follow this specific map order, the intended order is:&#xA;VB -> AB -> TD&#xA;&#xA;(Press F to flip to the next page)" autoTrigger="1" script-trigger="TehHP_PagedMarker(HoTStart)" GUID="W5mjo1MRJE2XQR+qtszvuA=="/>
+		<POI MapID="1052" xpos="859.087" ypos="432.067" zpos="50.4508" type="tthp.hothpt.mm.skyscale" script-trigger="TehHP_Bounce(uQyL4bcnQU+tDtwgH5Fiwg==)" autoTrigger="1" infoRange="20" info="Double Dodge -> Bond of Vigor -> Double Dodge -> Bond of Faith" GUID="F2OWU7hff0GfwYjncGF6ew=="/>
+		<POI MapID="1052" xpos="698.346" ypos="475.58" zpos="14.3254" type="tthp.hothpt.mm.bondoffaith" GUID="zIY5a9hlZUSroSzhlOAQYA=="/>
+		<POI MapID="1052" xpos="677.434" ypos="471.528" zpos="12.1133" type="tthp.hothpt.rm.jadewp" info="Place Jade WP. If it's on cooldown or something, you can always just fly back up here from Shipwreck Peak later." GUID="8WFF+LHilEOpMReKtujW4w=="/>
+		<POI MapID="1052" xpos="683.301" ypos="466.978" zpos="10.7854" type="tthp.hothpt.mm.griffon" GUID="wZhET2fG5EuhjYBh8rJPeA=="/>
+		<POI MapID="1052" xpos="524.835" ypos="415.68" zpos="304.549" type="tthp.hothpt.rm.stealth" GUID="azofLk9/k0iwYxmtI/DM1w=="/>
+		<POI MapID="1052" xpos="504.009" ypos="415.924" zpos="281.336" type="tthp.hothpt.mm.griffon" info="Small dive" GUID="Tf0O1r2nykSlYiUC3zIf+A=="/>
+		<POI MapID="1052" xpos="367.431" ypos="164.82" zpos="138.949" type="tthp.hothpt.rm.a" GUID="GU/XjynXT0u2NyEqKW/z5A=="/>
+		<POI MapID="1052" xpos="364.439" ypos="164.651" zpos="140.143" type="tthp.hothpt.rm.caution" info="Next HP is a [Easy] combat HP. If you don't want to do it, teleport back to your Jade WP after communing. Otherwise, take Wallow back up" infoRange="50" GUID="sSnfWty8lk+IMvX8Q1LF7g=="/>
+		<POI MapID="1052" xpos="408.343" ypos="341.796" zpos="43.1754" type="tthp.hothpt.mm.griffon" GUID="+FHV+T02EUiZaCjTcC8sfA=="/>
+		<POI MapID="1052" xpos="579.019" ypos="10.8666" zpos="-36.0707" type="tthp.hothpt.rm.caution" info="Difficulty: Easy&#xA;&#xA;Will spawn 5 Mordrem - 1 Veteran and 4 Normal.&#xA;&#xA;Kill all normal Mordrem first, then focus on the Veteran last. Adrenal Mushrooms (arrows) can be used to reset all skill CD's if you ever get in danger. Pretty easy by HoT standards.&#xA;&#xA;Afterwards, Teleport to Jade WP" GUID="6ASZQ9BztkWQ8Ncs462Qcg=="/>
+		<POI MapID="1052" xpos="575.461" ypos="11.5279" zpos="-36.3056" type="tthp.hothpt.rm.jadewp" script-trigger="TehHP_Bounce(brJgGFVmfUeKEqdgV/7sQQ==)" autoTrigger="1" GUID="7VU1ZxmTMUGanMo0eca5RA=="/>
+		<POI MapID="1052" xpos="681.855" ypos="468.249" zpos="12.213" type="tthp.hothpt.rm.1" GUID="uQyL4bcnQU+tDtwgH5Fiwg=="/>
+		<POI MapID="1052" xpos="667.328" ypos="473.072" zpos="8.52717" type="tthp.hothpt.mm.skyscale" GUID="YIMx5Ejg10GtHjSABoPzqQ=="/>
+		<POI MapID="1052" xpos="673.396" ypos="471.9" zpos="10.8922" type="tthp.hothpt.rm.2" GUID="brJgGFVmfUeKEqdgV/7sQQ=="/>
+		<POI MapID="1052" xpos="616.256" ypos="504.398" zpos="-8.58237" type="tthp.hothpt.mm.griffon" GUID="E2lYg/bv9Uumz/H08rjzTA=="/>
+		<POI MapID="1052" xpos="611.347" ypos="507.881" zpos="-6.16629" type="tthp.hothpt.rm.ppr_m" GUID="L3izxErLc0KTykkWiWD5hA=="/>
+		<POI MapID="1052" xpos="614.761" ypos="503.764" zpos="-7.2867" type="tthp.hothpt.rm.1" GUID="PpEHm8QTbEeeFomWW77Ixw=="/>
+		<POI MapID="1052" xpos="610.519" ypos="508.507" zpos="-3.60403" type="tthp.hothpt.rm.2" GUID="DBkEH2cMtki7Ir/HdiRkLw=="/>
+		<POI MapID="1052" xpos="617.009" ypos="456.505" zpos="-424.935" type="tthp.hothpt.rm.ppr_r" script-trigger="TehHP_Bounce(DBkEH2cMtki7Ir/HdiRkLw==)" autoTrigger="1" GUID="H4XFfT7KU02d/w5V06f7pA=="/>
+		<POI MapID="1052" xpos="609.656" ypos="642.933" zpos="13.21" type="tthp.hothpt.mm.griffon" GUID="dvVPX/QWL0Sd+gkBR2BxpA=="/>
+		<POI MapID="1052" xpos="-319.332" ypos="596.785" zpos="-216.778" type="tthp.hothpt.mm.griffon" GUID="PAYRsNkO0k+BSH4JIhm4tg=="/>
+		<POI MapID="1052" xpos="-667.899" ypos="559.482" zpos="-136.047" type="tthp.hothpt.rm.caution" info="Difficulty: Medium-Hard&#xA;&#xA;Spawns a Champion Golem and Heal-o-trons. Heal-o-trons should always be focused first. Summons/Pets/Minions and Ranged recommended. CC is a plus.&#xA;Generally, try to stay out of melee range and kite. Try to save dodges for his hand pull, the animation is very obvious.&#xA;If you have more than one player, you can sit on arrows to do free damage." GUID="gQoeGOgF7k2JO0WqezAepg=="/>
+		<POI MapID="1052" xpos="-696.765" ypos="577.189" zpos="-88.6576" type="tthp.hothpt.mm.griffon" GUID="fUxBTPl13kSzmTqeqC9UeA=="/>
+		<POI MapID="1052" xpos="-596.311" ypos="442.087" zpos="192.736" type="tthp.hothpt.mm.griffon" GUID="n/iU+faAGk+3GFvjV5LZqg=="/>
+		<POI MapID="1052" xpos="-409.576" ypos="174.663" zpos="-127.013" type="tthp.hothpt.rm.dismount" info="Dismount and glide down, dont try to land with mount" GUID="FzMbL8vjuke24zts0fG/Xg=="/>
+		<POI MapID="1052" xpos="-397.991" ypos="148.019" zpos="-112.767" type="tthp.hothpt.mm.skyscale" GUID="OsbJjBPlr0eVYabTYMGaUA=="/>
+		<POI MapID="1052" xpos="-376.314" ypos="147.447" zpos="-83.0625" type="tthp.hothpt.mm.distogriff" GUID="kCDpV2BYLEex3XRArimAuw=="/>
+		<POI MapID="1052" xpos="-76.654" ypos="27.1646" zpos="-132.14" type="tthp.hothpt.wm.tpm" copy="[&amp;BO8HAAA=]" script-focus="TehHP_HighlightWaypoint(fqHTCcc74EiLVDGN4D5/yA==)" GUID="gnZdhQJvR02CLVhrBEr73A=="/>
+		<POI MapID="1052" xpos="-529.268" ypos="512.762" zpos="-277.238" type="tthp.hothpt.mm.raptor" GUID="AnG38JOhdEiqjfYrmMENng=="/>
+		<POI MapID="1052" xpos="-635.271" ypos="501.767" zpos="-306.137" type="tthp.hothpt.mm.griffon" GUID="MRir/53ONUe+/AkkxWmZVw=="/>
+		<POI MapID="1052" xpos="-700.03" ypos="361.751" zpos="-351.557" type="tthp.hothpt.wm.tpm" copy="[&amp;BBwIAAA=]" script-focus="TehHP_HighlightWaypoint(mCweiGHeLEmzXefS2IE3Kw==)" GUID="ndkWVBUmiU2Hhb7W3au39Q=="/>
+		<POI MapID="1052" xpos="-701.702" ypos="361.757" zpos="-349.415" type="tthp.hothpt.rm.caution" info="Difficulty: Easy because WP is right there to retry from&#xA;&#xA;Before spawning, kill all wasps!&#xA;&#xA;Spawns 1 Champion frog and 2 normals. Ranged is HIGHLY recommended. CC not too important.&#xA;&#xA;Precast summons if you have any. Immediately focus the normals, they hit like TRUCKS. The champion alone is not a huge threat as he mostly stays melee and is easy to kite.&#xA;Once normals are dead, it's just a matter of chipping away the Champ down. Do not fight him melee range and do you very best to not get hit by his dagger combo." GUID="rysFGh0tVUeMP7tdGp/yzw=="/>
+		<POI MapID="1052" xpos="-769.718" ypos="377.791" zpos="-397.872" type="tthp.hothpt.wm.wph" GUID="mCweiGHeLEmzXefS2IE3Kw=="/>
+		<POI MapID="1052" xpos="-524.787" ypos="513.685" zpos="-278.64" type="tthp.hothpt.wm.wph" GUID="fqHTCcc74EiLVDGN4D5/yA=="/>
+		<POI MapID="1052" xpos="-773.462" ypos="378.477" zpos="-398.184" type="tthp.hothpt.mm.raptor" GUID="y/sXWX/n+UiSJrT/DcZEbA=="/>
+		<POI MapID="1052" xpos="-792.622" ypos="379.437" zpos="-428.12" type="tthp.hothpt.rm.exit_map" infoRange="30" info="Yes, I intentionally left out Guano...For one, it's a pain to get to unless choppers are up.&#xA;&#xA;For two, I know a majority of people won't be able to solo it. If you want to get it, feel free to wait till choppers are up and go for it." GUID="ajA9mRVkVEapGBF43a2KbA=="/>
+		<POI MapID="1052" xpos="598.964" ypos="12.6745" zpos="-22.5595" type="tthp.hothpt.rm.a" GUID="G3SwO4rt0EW/2C+2CuLBBg=="/>
+		<POI MapID="1052" xpos="552.614" ypos="14.6372" zpos="-63.4333" type="tthp.hothpt.rm.a" GUID="n6w19dTJo0yl1k80PugxGA=="/>
+		<POI MapID="1052" xpos="-637.559" ypos="577.789" zpos="-129.58" type="tthp.hothpt.rm.a" GUID="v1y6ifAYzE6W24b+ZAtsUg=="/>
+		<POI MapID="1052" xpos="-649.588" ypos="575.648" zpos="-149.379" type="tthp.hothpt.rm.a" GUID="eHkJ1LnUFU2hwMas2ViwpA=="/>
 
 	<!--HEART OF THORNS TRAILS-->
 		<Trail type="tthp.hothpt.ct" GUID="cb6VPxgSL0yytSwws/y+Vg==" trailData="Data/TehsTrails-HeroPoints/HoTHPTrails/VerdantBrink.trl"/>
-		<Trail type="tthp.hothpt.ct" GUID="cb6VPxgSL0yytSwws/y+Vg==" trailData="Data/TehsTrails-HeroPoints/HoTHPTrails/VerdantBrinkGriffTrail.trl"/>
 		<Trail type="tthp.hothpt.ct" GUID="cb6VPxgSL0yytSwws/y+Vg==" trailData="Data/TehsTrails-HeroPoints/HoTHPTrails/AuricBasin.trl"/>
-		<Trail type="tthp.hothpt.ct" GUID="cb6VPxgSL0yytSwws/y+Vg==" trailData="Data/TehsTrails-HeroPoints/HoTHPTrails/AuricBasinGriffTrail.trl"/>
 		<Trail type="tthp.hothpt.ct" GUID="cb6VPxgSL0yytSwws/y+Vg==" trailData="Data/TehsTrails-HeroPoints/HoTHPTrails/TangledDepths.trl"/>
 
 
@@ -598,9 +620,9 @@ xmlns="https://github.com/xrandox/Gw2_Marker_Pack_DTD_XSD">
 		<POI MapID="1452" xpos="-876.793" ypos="222.174" zpos="-484.05" type="tthp.eodhp.wm.tpm" GUID="tMD5xgoWFE+fTApXG2wFRw==" copy="[&amp;BIsMAAA=]" script-trigger="TehHP_Bounce(HNHwJcc+D0WcCR6xY/w7sw==)" script-focus="TehHP_HighlightWaypoint(b1GjjP6GJEuxLSguG3EIJw==)"/>
 		<POI MapID="1452" xpos="-177.319" ypos="146.945" zpos="-97.2249" type="tthp.eodhp.mm.skyscale" GUID="ThZ+i0vWX0uIaittSN6LmA=="/>
 		<POI MapID="1452" xpos="-97.772" ypos="204.306" zpos="-57.7187" type="tthp.eodhp.mm.skyscale" GUID="HRzQBY8tX0u3kx8/t7vwGw=="/>
-		<POI MapID="1452" xpos="-74.3877" ypos="229.942" zpos="-52.3418" type="tthp.eodhp.mm.griffon" GUID="eTNoYEENHEWiWfhFzDVONQ==" info="It's important that you don't mess this dive up"/>
+		<POI MapID="1452" xpos="-74.3877" ypos="229.942" zpos="-52.3418" type="tthp.eodhp.mm.griffon" GUID="eTNoYEENHEWiWfhFzDVONQ==" info="It's important that you don't mess this dive up. Recommend placing a PPR mark here just in case you bonk your head"/>
 		<POI MapID="1452" xpos="1029.66" ypos="99.7374" zpos="-659.846" type="tthp.eodhp.mm.griffon" GUID="9kWyj07JfEyiaCQtXH1PTg=="/>
-		<POI MapID="1452" xpos="146.016" ypos="0.889345" zpos="-691.969" type="tthp.eodhp.rm.finish" GUID="9OUAJ+/Gq0SUPDHolWZHHQ==" info="TEW Done! Go to whichever waypoint you have unlocked. Order of preference:&#xA;- Jade Quarry Waypoint&#xA;- Jade Gate Waypoint&#xA;- Mori Village Waypoint" copy="[&amp;BKIMAAA=] | [&amp;BPkMAAA=] | [&amp;BMcMAAA=]"/>
+		<POI MapID="1452" xpos="146.016" ypos="0.889345" zpos="-691.969" type="tthp.eodhp.rm.finish" GUID="9OUAJ+/Gq0SUPDHolWZHHQ==" info="TEW Done! Go to whichever waypoint you have unlocked. Order of preference:&#xA;• Jade Quarry Waypoint&#xA;• Jade Gate Waypoint&#xA;• Mori Village Waypoint" copy="[&amp;BKIMAAA=] | [&amp;BPkMAAA=] | [&amp;BMcMAAA=]"/>
 		<POI MapID="1452" xpos="-657.234" ypos="162.677" zpos="361.984" type="tthp.eodhp.rm.start" GUID="2/uoUBMDI02nScgQ/06nUw=="/>
 		<POI MapID="1452" xpos="-654.96" ypos="162.68" zpos="356.873" type="tthp.eodhp.mm.beetle" GUID="S/Ou1JgXakiNhHAaxyW20A=="/>
 		<POI MapID="1452" xpos="-647.455" ypos="170.43" zpos="61.0656" type="tthp.eodhp.mm.skyscale" GUID="HXRhXJHmo0OGFc5Hppyv3A=="/>
@@ -609,7 +631,7 @@ xmlns="https://github.com/xrandox/Gw2_Marker_Pack_DTD_XSD">
 		<POI MapID="1452" xpos="-872.427" ypos="263.432" zpos="-456.213" type="tthp.eodhp.mm.bondoffaith" GUID="+w38FQu6d0iNuupfWv9HWQ=="/>
 		<POI MapID="1452" xpos="-355.735" ypos="195.087" zpos="671.045" type="tthp.eodhp.rm.stealth" GUID="irjJszhmJkaLs+gPEX5c1g=="/>
 		<POI MapID="1452" xpos="-98.893" ypos="204.296" zpos="-53.487" type="tthp.eodhp.rm.stealth" GUID="XBu3YQFguUiCu62jbDuejw=="/>
-		<POI MapID="1452" xpos="1036.71" ypos="99.7374" zpos="-658.596" type="tthp.eodhp.rm.ppr_m" info="If you do not have any of the copied waypoints, you need to PPR and unlock Mori Village waypoint, then you can continue on the path" copy="[&amp;BKIMAAA=] | [&amp;BPkMAAA=] | [&amp;BMcMAAA=]" GUID="tUko2qB/P0OuEStp1X3smA=="/>
+		<POI MapID="1452" xpos="1036.71" ypos="99.7374" zpos="-658.596" type="tthp.eodhp.rm.ppr_m" info="If you do not have any of the following waypoints you need to PPR and unlock Mori Village waypoint, then you can continue on the path:&#xA;• Jade Quarry Waypoint&#xA;• Jade Gate Waypoint&#xA;• Mori Village Waypoint" copy="[&amp;BKIMAAA=] | [&amp;BPkMAAA=] | [&amp;BMcMAAA=]" GUID="tUko2qB/P0OuEStp1X3smA=="/>
 		<POI MapID="1452" xpos="1059.2" ypos="7.68954" zpos="-524.991" type="tthp.eodhp.rm.ppr_r" GUID="ihqQvqTNVEOUykzDe+Obqw=="/>
 	<!--DE Markers-->
 		<POI MapID="1422" xpos="-197.953" ypos="176.318" zpos="837.784" type="tthp.eodhp.rm.start" GUID="5UxoAX4suUu5yaXlt5EYgQ=="/>

@@ -33,6 +33,11 @@ local function routeMarkerHighlight(menu)
     menu.Checked = TehHP_GetBool("bounceToggled")
 end
 
+local function alternateMounts(menu)
+    TehHP_AlternateMounts()
+    menu.Checked = TehHP_GetBool("alternateMounts")
+end
+
 local function resetClicked(menu)
     if (TehHP.bounce.isBouncing) then TehHP_BounceReset() end
     if (TehHP.highlight.waypointHighlighted) then TehHP_HighlightReset() end
@@ -54,6 +59,8 @@ for i, value in ipairs(TehHP.trailcolors.colors) do
     end
     TehHP.trailcolors.colors[i][3] = colorMenu:Add(name, newColor, true, checked)
 end
+
+local ami = mainMenu:Add("Enable Alternate Mount Icons", alternateMounts, true, TehHP_GetBool("alternateMounts"), "Switches out the custom mount icons for the Anet icons")
 
 -- Map menu
 local mapOptionMenu = mainMenu:Add("Map Visibility Options", nil, false, false, "Requires Default for Show Trails on Map in Pathing Settings to work properly")

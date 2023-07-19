@@ -6,6 +6,7 @@ TehHP.storage = {
     highlightToggled = "true",
     hpTrailColor = "Light Blue [Default]",
     firstLaunch = "true",
+    alternateMounts = "false"
 }
 
 Debug:Watch("TehHP_Storage", TehHP.storage)

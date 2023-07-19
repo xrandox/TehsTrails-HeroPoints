@@ -19,6 +19,7 @@ if (TehHP_VersionCheck()) then
     Pack:Require("Data/TehsTrails-HeroPoints/Scripts/highlight.lua")
     Pack:Require("Data/TehsTrails-HeroPoints/Scripts/mmtoggle.lua")
     Pack:Require("Data/TehsTrails-HeroPoints/Scripts/copy.lua")
+    Pack:Require("Data/TehsTrails-HeroPoints/Scripts/alternatemounts.lua")
     Pack:Require("Data/TehsTrails-HeroPoints/Scripts/tutorial.lua")
     Pack:Require("Data/TehsTrails-HeroPoints/Scripts/tehmenu.lua")
 
