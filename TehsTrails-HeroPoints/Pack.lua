@@ -1,5 +1,5 @@
 TehHP = {}
-TehsTrailsVersion = "Beta v1"
+TehsTrailsVersion = "Beta v7"
 
 Debug:Print("Pathing Version: v" .. PathingVersion)
 Debug:Print("TehsTrails-HeroPoints Version: " .. TehsTrailsVersion)
@@ -20,6 +20,7 @@ if (TehHP_VersionCheck()) then
     Pack:Require("Data/TehsTrails-HeroPoints/Scripts/mmtoggle.lua")
     Pack:Require("Data/TehsTrails-HeroPoints/Scripts/copy.lua")
     Pack:Require("Data/TehsTrails-HeroPoints/Scripts/alternatemounts.lua")
+    Pack:Require("Data/TehsTrails-HeroPoints/Scripts/toggleinfo.lua")
     Pack:Require("Data/TehsTrails-HeroPoints/Scripts/tutorial.lua")
     Pack:Require("Data/TehsTrails-HeroPoints/Scripts/tehmenu.lua")
 

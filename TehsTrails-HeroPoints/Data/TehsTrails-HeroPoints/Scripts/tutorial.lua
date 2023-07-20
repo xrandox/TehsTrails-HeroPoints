@@ -41,9 +41,9 @@ local MARKER_CATALOG = {
     },
     {
         info = {
-            "From easiest to hardest to solo:\n - Path of Fire (Easiest)\n - End of Dragons\n - Heart of Thorns (Hardest)\n\n\n(Press F to flip to the next page)",
+            "From easiest to hardest to solo:\n - Path of Fire (Easiest w/o Stealth)\n - End of Dragons (Easiest w/ stealth)\n - Heart of Thorns (Hardest)\n\n\n(Press F to flip to the next page)",
             "PoF is the easiest due to most combat HP's being veterans unless scaled by a lot of people\n\nPretty much any level of player with a decent build should be able to manage these solo\n\n(Press F to flip to the next page)",
-            "EoD is kind of mid-tier difficulty. The combat HP's are all elites, so they are technically a bit more challenging than PoF, but a lot of them can be stealth-communed\n\nBecause of this, if your class has access to stealth (or you have ALSK's), EoD can actually be easier than PoF\n\n(Press F to flip to the next page)",
+            "EoD depends whether you have stealth or not. The combat HP's are all elites, so they are technically a bit more challenging than PoF, but nearly all of them can be stealth-communed\n\nBecause of this, if your class has access to stealth (or you have ALSK's), EoD can be even easier than PoF\n\n(Press F to flip to the next page)",
             "HoT is significantly harder than either of the other two expansions\n\nCombat HP's are extremely challenging, there's not many free communes, and even some of the normal mobs can be dangerous to newer players or squishy builds\n\nI really recommend trying to get a few guildies or friends to tag along\n\nIf you've got your mind set on solo-ing, pay attention to the HP notes and pick your fights carefully\n\n(Press F to flip back to the first page)"
         },
         iconFile = { "Data/TehsTrails-HeroPoints/Markers/expacs.png", "Data/TehsTrails-HeroPoints/Markers/pof.png", "Data/TehsTrails-HeroPoints/Markers/eod.png", "Data/TehsTrails-HeroPoints/Markers/hot.png"},
@@ -187,7 +187,7 @@ end
 
 local function tutorialTickHandler(gametime)
     if (TehHP.tutorial.shown) then
-        if ((Mumble.PlayerCharacter.Position - TehHP.tutorial.origin):Length() > 35) then
+        if ((Mumble.PlayerCharacter.Position - TehHP.tutorial.origin):Length() > 50) then
             hideTutorial()
         end
     end

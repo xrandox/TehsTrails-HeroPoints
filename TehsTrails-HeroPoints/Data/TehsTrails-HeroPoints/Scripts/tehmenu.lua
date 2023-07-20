@@ -43,6 +43,10 @@ local function resetClicked(menu)
     if (TehHP.highlight.waypointHighlighted) then TehHP_HighlightReset() end
 end
 
+local function restoreAllHiddenInfo(menu)
+    TehHP_UnhideAllInfo()
+end
+
 -- Creating Menu
 local mainMenu = Menu:Add("Tehs Trails - Hero Points", nil)
 
@@ -69,6 +73,8 @@ mapOptionMenu:Add("Show Main Trail on Minimap", minimapTrails, true, TehHP_GetBo
 -- Other options
 local ewh = mainMenu:Add("Enable Waypoint Highlights", waypointHighlight, true, TehHP_GetBool("highlightToggled"), "Adds a highlight around the waypoint you are supposed to teleport to. Highly recommended to leave this on")
 local rmh = mainMenu:Add("Enable Route Marker Highlights", routeMarkerHighlight, true, TehHP_GetBool("bounceToggled"), "Adds a highlight and bounce effect to the route marker you are supposed to follow")
+
+local rhi = mainMenu:Add("Restore All Hidden Info", restoreAllHiddenInfo, false, false, "Restores any hidden info text boxes")
 
 -- Script reset
 local ras = mainMenu:Add("  [  RESET ALL SCRIPTS  ]  ", resetClicked, false, false, "Resets all currently running scripts in case there is a malfunction")
