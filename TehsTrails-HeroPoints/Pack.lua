@@ -1,5 +1,5 @@
 TehHP = {}
-TehsTrailsVersion = "Beta v7"
+TehsTrailsVersion = "Release v1.0"
 
 Debug:Print("Pathing Version: v" .. PathingVersion)
 Debug:Print("TehsTrails-HeroPoints Version: " .. TehsTrailsVersion)
