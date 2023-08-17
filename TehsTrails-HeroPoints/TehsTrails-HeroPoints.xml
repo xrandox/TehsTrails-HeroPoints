@@ -648,9 +648,12 @@ xmlns="https://github.com/xrandox/Gw2_Marker_Pack_DTD_XSD">
 		<POI MapID="1422" xpos="227.066" ypos="163.661" zpos="-228.634" type="tthp.eodhp.mm.skyscale" GUID="sTbE5merUUWm9dNNf6m+qw=="/>
 		<POI MapID="1422" xpos="106.988" ypos="181.348" zpos="-268.323" type="tthp.eodhp.mm.skyscale" GUID="Yv56Z0AZpEGWqp8UNrA+0w=="/>
 	<!--AS Markers-->
+		<POI MapID="1428" xpos="-770.552" ypos="6.81791" zpos="457.071" type="tthp.hothpt.rm.1" GUID="iUj9+mvo/0+UXEmNxFZziA=="/>
+		<POI MapID="1428" xpos="-764.93" ypos="6.46407" zpos="452.875" type="tthp.hothpt.rm.2" GUID="sEGUewoyyE2wv7GhdG38vA=="/>
 		<POI MapID="1428" xpos="-817.805" ypos="6.929" zpos="454.299" type="tthp.eodhp.rm.exit" info="Go through the portal to start the TEW HP Trail" GUID="ZJ7FgNViLkOOgUuuqlEgvA=="/>
-		<POI MapID="1428" xpos="-817.739" ypos="2.117" zpos="521.432" type="tthp.eodhp.rm.start" info="This is the start of the Teh's Trails EoD Hero Point trail!&#xA;&#xA;While you don't have to follow this specific map order, the intended order is:&#xA;NKC -> SP -> TEW -> DE&#xA;&#xA;(Press F to flip to next page)" autoTrigger="1" script-trigger="TehHP_PagedMarker(EoDStart)" GUID="ZI7FgNViLkOOgUuuqlEgvA=="/>
+		<POI MapID="1428" xpos="-814.45" ypos="2.117" zpos="524.037" type="tthp.eodhp.rm.start" info="This is the start of the Teh's Trails EoD Hero Point trail!&#xA;&#xA;While you don't have to follow this specific map order, the intended order is:&#xA;NKC -> SP -> TEW -> DE&#xA;&#xA;(Press F to flip to next page)" autoTrigger="1" script-trigger="TehHP_PagedMarker(EoDStart)" GUID="ZI7FgNViLkOOgUuuqlEgvA=="/>
 		<POI MapID="1428" xpos="-831.778" ypos="1.96808" zpos="531.504" type="tthp.eodhp.mm.beetle" GUID="ce6VPxgSL0yytSwws/y+Vg=="/>
+		<POI MapID="1428" xpos="-782.789" ypos="9.674" zpos="643.274" type="tthp.eodhp.wm.tpm" GUID="VmcrQK0w1EqDjlL+KFUG9A==" copy="[&amp;BGMNAAA=]" script-trigger="TehHP_Bounce()" script-focus="TehHP_HighlightWaypoint(b1GjjP6GJEuxLSguG3EIJw==)"/>
 	<!--Hero Point Trails-->
 		<Trail type="tthp.eodhp.ct" GUID="cb6VPxgSL0yytSwws/y+Vg==" trailData="Data/TehsTrails-HeroPoints/EoDTrails/SPHP.trl"/>
 		<Trail type="tthp.eodhp.ct" GUID="cb6VPxgSL0yytSwws/y+Vg==" trailData="Data/TehsTrails-HeroPoints/EoDTrails/NKCHP.trl"/>
